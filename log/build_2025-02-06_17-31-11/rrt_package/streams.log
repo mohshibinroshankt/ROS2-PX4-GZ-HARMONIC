@@ -1,0 +1,26 @@
+[1.339s] Invoking command in '/home/shibin/ws_sensor_combined/src/rrt_package': PYTHONPATH=/home/shibin/ws_sensor_combined/build/rrt_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/shibin/ws_sensor_combined/install/rrt_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rrt_package build --build-base /home/shibin/ws_sensor_combined/build/rrt_package/build install --record /home/shibin/ws_sensor_combined/build/rrt_package/install.log --single-version-externally-managed install_data
+[1.715s] running egg_info
+[1.715s] writing ../../build/rrt_package/rrt_package.egg-info/PKG-INFO
+[1.716s] writing dependency_links to ../../build/rrt_package/rrt_package.egg-info/dependency_links.txt
+[1.716s] writing entry points to ../../build/rrt_package/rrt_package.egg-info/entry_points.txt
+[1.716s] writing requirements to ../../build/rrt_package/rrt_package.egg-info/requires.txt
+[1.716s] writing top-level names to ../../build/rrt_package/rrt_package.egg-info/top_level.txt
+[1.719s] reading manifest file '../../build/rrt_package/rrt_package.egg-info/SOURCES.txt'
+[1.719s] adding license file 'LICENSE'
+[1.719s] writing manifest file '../../build/rrt_package/rrt_package.egg-info/SOURCES.txt'
+[1.719s] running build
+[1.720s] running build_py
+[1.720s] copying rrt_package/my_node2.py -> /home/shibin/ws_sensor_combined/build/rrt_package/build/lib/rrt_package
+[1.720s] running install
+[1.720s] running install_lib
+[1.721s] copying /home/shibin/ws_sensor_combined/build/rrt_package/build/lib/rrt_package/my_node2.py -> /home/shibin/ws_sensor_combined/install/rrt_package/lib/python3.10/site-packages/rrt_package
+[1.722s] byte-compiling /home/shibin/ws_sensor_combined/install/rrt_package/lib/python3.10/site-packages/rrt_package/my_node2.py to my_node2.cpython-310.pyc
+[1.724s] running install_data
+[1.724s] running install_egg_info
+[1.727s] removing '/home/shibin/ws_sensor_combined/install/rrt_package/lib/python3.10/site-packages/rrt_package-0.0.0-py3.10.egg-info' (and everything under it)
+[1.728s] Copying ../../build/rrt_package/rrt_package.egg-info to /home/shibin/ws_sensor_combined/install/rrt_package/lib/python3.10/site-packages/rrt_package-0.0.0-py3.10.egg-info
+[1.728s] running install_scripts
+[1.757s] Installing my_node script to /home/shibin/ws_sensor_combined/install/rrt_package/lib/rrt_package
+[1.757s] Installing my_node2 script to /home/shibin/ws_sensor_combined/install/rrt_package/lib/rrt_package
+[1.757s] writing list of installed files to '/home/shibin/ws_sensor_combined/build/rrt_package/install.log'
+[2.137s] Invoked command in '/home/shibin/ws_sensor_combined/src/rrt_package' returned '0': PYTHONPATH=/home/shibin/ws_sensor_combined/build/rrt_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/shibin/ws_sensor_combined/install/rrt_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rrt_package build --build-base /home/shibin/ws_sensor_combined/build/rrt_package/build install --record /home/shibin/ws_sensor_combined/build/rrt_package/install.log --single-version-externally-managed install_data

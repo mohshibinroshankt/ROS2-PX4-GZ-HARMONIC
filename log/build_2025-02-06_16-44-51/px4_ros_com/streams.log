@@ -1,0 +1,77 @@
+[2.248s] Invoking command in '/home/shibin/ws_sensor_combined/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/shibin/ws_sensor_combined/install/px4_msgs:/home/shibin/ws_sensor_combined/install/px4_ros_com:/home/shibin/project_ws/install/tutorial_interfaces:/home/shibin/ws_sensor_combined/install/rrt_package:/home/shibin/ws_sensor_combined/install/px4_offboard:/home/shibin/ws_sensor_combined/install/gazebo_ros_bridge:/home/shibin/project_ws/install/serp_rl:/home/shibin/project_ws/install/project_pkg:/home/shibin/project_ws/install/drone_simulation:/opt/ros/humble LD_LIBRARY_PATH=/home/shibin/ws_sensor_combined/install/px4_msgs/lib:/home/shibin/ws_sensor_combined/install/px4_ros_com/lib:/home/shibin/project_ws/install/tutorial_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/ortools_vendor/lib:/opt/ros/humble/lib /usr/bin/cmake --build /home/shibin/ws_sensor_combined/build/px4_ros_com -- -j8 -l8
+[2.604s] [ 16%] Built target frame_transforms
+[2.767s] [ 16%] Built target ament_cmake_python_copy_px4_ros_com
+[2.943s] [ 33%] Built target offboard_control_srv
+[5.094s] running egg_info
+[5.095s] writing px4_ros_com.egg-info/PKG-INFO
+[5.098s] writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+[5.099s] writing top-level names to px4_ros_com.egg-info/top_level.txt
+[5.115s] reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[5.118s] writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[5.263s] [ 33%] Built target ament_cmake_python_build_px4_ros_com_egg
+[5.422s] [ 50%] Built target offboard_control
+[5.579s] [ 66%] Built target debug_vect_advertiser
+[5.723s] [ 83%] Built target vehicle_gps_position_listener
+[5.859s] [100%] Built target sensor_combined_listener
+[5.915s] Invoked command in '/home/shibin/ws_sensor_combined/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/shibin/ws_sensor_combined/install/px4_msgs:/home/shibin/ws_sensor_combined/install/px4_ros_com:/home/shibin/project_ws/install/tutorial_interfaces:/home/shibin/ws_sensor_combined/install/rrt_package:/home/shibin/ws_sensor_combined/install/px4_offboard:/home/shibin/ws_sensor_combined/install/gazebo_ros_bridge:/home/shibin/project_ws/install/serp_rl:/home/shibin/project_ws/install/project_pkg:/home/shibin/project_ws/install/drone_simulation:/opt/ros/humble LD_LIBRARY_PATH=/home/shibin/ws_sensor_combined/install/px4_msgs/lib:/home/shibin/ws_sensor_combined/install/px4_ros_com/lib:/home/shibin/project_ws/install/tutorial_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/ortools_vendor/lib:/opt/ros/humble/lib /usr/bin/cmake --build /home/shibin/ws_sensor_combined/build/px4_ros_com -- -j8 -l8
+[5.926s] Invoking command in '/home/shibin/ws_sensor_combined/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/shibin/ws_sensor_combined/install/px4_msgs:/home/shibin/ws_sensor_combined/install/px4_ros_com:/home/shibin/project_ws/install/tutorial_interfaces:/home/shibin/ws_sensor_combined/install/rrt_package:/home/shibin/ws_sensor_combined/install/px4_offboard:/home/shibin/ws_sensor_combined/install/gazebo_ros_bridge:/home/shibin/project_ws/install/serp_rl:/home/shibin/project_ws/install/project_pkg:/home/shibin/project_ws/install/drone_simulation:/opt/ros/humble LD_LIBRARY_PATH=/home/shibin/ws_sensor_combined/install/px4_msgs/lib:/home/shibin/ws_sensor_combined/install/px4_ros_com/lib:/home/shibin/project_ws/install/tutorial_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/ortools_vendor/lib:/opt/ros/humble/lib /usr/bin/cmake --install /home/shibin/ws_sensor_combined/build/px4_ros_com
+[5.962s] -- Install configuration: ""
+[5.964s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/sensor_combined_listener
+[5.965s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/vehicle_gps_position_listener
+[5.967s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/debug_vect_advertiser
+[5.970s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_control
+[5.971s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_control_srv
+[5.972s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/library_path.sh
+[5.973s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/library_path.dsv
+[5.974s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/include/px4_ros_com
+[5.974s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/include/px4_ros_com/frame_transforms.h
+[5.975s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/lib/libframe_transforms.so
+[5.976s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//launch
+[5.979s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//launch/offboard_avoidance.launch.py
+[5.979s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//launch/offboard_control_launch.yaml
+[5.981s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//launch/sensor_combined_listener.launch.py
+[5.982s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test
+[5.983s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/pipeline_io_test.py
+[5.983s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/test_output.py
+[5.984s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/test_input.py
+[5.985s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/__init__.py
+[5.989s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//config
+[5.992s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//config/gz_bridge.yaml
+[5.994s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/pythonpath.sh
+[5.995s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/pythonpath.dsv
+[5.996s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info
+[6.002s] -- Installing: /home/shibin/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/top_level.txt
+[6.004s] -- Installing: /home/shibin/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/PKG-INFO
+[6.005s] -- Installing: /home/shibin/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/SOURCES.txt
+[6.005s] -- Installing: /home/shibin/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/dependency_links.txt
+[6.006s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com
+[6.007s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/module_to_import.py
+[6.007s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/__init__.py
+[6.208s] Listing '/home/shibin/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com'...
+[6.242s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_control.py
+[6.243s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/obstacle_avoidance.py
+[6.243s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_newposition.py
+[6.244s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/path_planning_node.py
+[6.244s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/takeoff_node.py
+[6.245s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/ament_index/resource_index/package_run_dependencies/px4_ros_com
+[6.245s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/ament_index/resource_index/parent_prefix_path/px4_ros_com
+[6.246s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.sh
+[6.246s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.dsv
+[6.247s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/path.sh
+[6.247s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/path.dsv
+[6.248s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.bash
+[6.248s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.sh
+[6.248s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.zsh
+[6.249s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.dsv
+[6.249s] -- Installing: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.dsv
+[6.250s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/ament_index/resource_index/packages/px4_ros_com
+[6.251s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport.cmake
+[6.252s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport-noconfig.cmake
+[6.252s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.253s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_targets-extras.cmake
+[6.254s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.254s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_libraries-extras.cmake
+[6.256s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig.cmake
+[6.256s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig-version.cmake
+[6.257s] -- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.xml
+[6.268s] Invoked command in '/home/shibin/ws_sensor_combined/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/shibin/ws_sensor_combined/install/px4_msgs:/home/shibin/ws_sensor_combined/install/px4_ros_com:/home/shibin/project_ws/install/tutorial_interfaces:/home/shibin/ws_sensor_combined/install/rrt_package:/home/shibin/ws_sensor_combined/install/px4_offboard:/home/shibin/ws_sensor_combined/install/gazebo_ros_bridge:/home/shibin/project_ws/install/serp_rl:/home/shibin/project_ws/install/project_pkg:/home/shibin/project_ws/install/drone_simulation:/opt/ros/humble LD_LIBRARY_PATH=/home/shibin/ws_sensor_combined/install/px4_msgs/lib:/home/shibin/ws_sensor_combined/install/px4_ros_com/lib:/home/shibin/project_ws/install/tutorial_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/ortools_vendor/lib:/opt/ros/humble/lib /usr/bin/cmake --install /home/shibin/ws_sensor_combined/build/px4_ros_com

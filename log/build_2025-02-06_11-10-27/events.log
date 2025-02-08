@@ -1,0 +1,1029 @@
+[0.000000] (-) TimerEvent: {}
+[0.000702] (gazebo_ros_bridge) JobQueued: {'identifier': 'gazebo_ros_bridge', 'dependencies': OrderedDict()}
+[0.002122] (px4_msgs) JobQueued: {'identifier': 'px4_msgs', 'dependencies': OrderedDict()}
+[0.003622] (rrt_package) JobQueued: {'identifier': 'rrt_package', 'dependencies': OrderedDict()}
+[0.003877] (px4_ros_com) JobQueued: {'identifier': 'px4_ros_com', 'dependencies': OrderedDict([('px4_msgs', '/home/shibin/ws_sensor_combined/install/px4_msgs')])}
+[0.004142] (px4_msgs) JobStarted: {'identifier': 'px4_msgs'}
+[0.025925] (gazebo_ros_bridge) JobStarted: {'identifier': 'gazebo_ros_bridge'}
+[0.049237] (rrt_package) JobStarted: {'identifier': 'rrt_package'}
+[0.078195] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'cmake'}
+[0.079659] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'build'}
+[0.081184] (px4_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/shibin/ws_sensor_combined/build/px4_msgs', '--', '-j8', '-l8'], 'cwd': '/home/shibin/ws_sensor_combined/build/px4_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GZ_SIM_RESOURCE_PATH', '/home/shibin/PX4-Autopilot/Tools/simulation/gz/models:/home/shibin/PX4-Autopilot/Tools/simulation/gz/worlds:'), ('LANGUAGE', 'en_IN:en'), ('USER', 'shibin'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/shibin/ws_sensor_combined/install/px4_ros_com/lib:/home/shibin/ws_sensor_combined/install/px4_msgs/lib:/home/shibin/project_ws/install/tutorial_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/ortools_vendor/lib:/opt/ros/humble/lib'), ('HOME', '/home/shibin'), ('OLDPWD', '/home/shibin'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '5029'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/shibin/project_ws/install:/home/shibin/ws_sensor_combined/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'shibin'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'shibin'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/opt/ortools_vendor/bin:/opt/ros/humble/bin:/home/shibin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/shibin-Mi-NoteBook:@/tmp/.ICE-unix/1116,unix/shibin-Mi-NoteBook:/tmp/.ICE-unix/1116'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5bb58508_9fa5_4bea_a021_eed717ab8e57'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.427G12'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.127'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/shibin/ws_sensor_combined/install/px4_ros_com:/home/shibin/ws_sensor_combined/install/px4_msgs:/home/shibin/ws_sensor_combined/install/gazebo_ros_bridge:/home/shibin/project_ws/install/tutorial_interfaces:/home/shibin/project_ws/install/serp_rl:/home/shibin/project_ws/install/project_pkg:/home/shibin/project_ws/install/drone_simulation:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GZ_VERSION', 'harmonic'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/shibin/ws_sensor_combined/build/px4_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/shibin/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/shibin/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/home/shibin/ws_sensor_combined/install/gazebo_ros_bridge/lib/python3.10/site-packages:/home/shibin/project_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:/home/shibin/project_ws/install/serp_rl/lib/python3.10/site-packages:/home/shibin/project_ws/install/project_pkg/lib/python3.10/site-packages:/home/shibin/project_ws/install/drone_simulation/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/shibin/ws_sensor_combined/install/px4_ros_com:/home/shibin/ws_sensor_combined/install/px4_msgs:/home/shibin/project_ws/install/tutorial_interfaces:/home/shibin/ws_sensor_combined/install/gazebo_ros_bridge:/home/shibin/project_ws/install/serp_rl:/home/shibin/project_ws/install/project_pkg:/home/shibin/project_ws/install/drone_simulation:/opt/ros/humble')]), 'shell': False}
+[0.099856] (-) TimerEvent: {}
+[0.200725] (-) TimerEvent: {}
+[0.302256] (-) TimerEvent: {}
+[0.402845] (-) TimerEvent: {}
+[0.503250] (-) TimerEvent: {}
+[0.603702] (-) TimerEvent: {}
+[0.704128] (-) TimerEvent: {}
+[0.804610] (-) TimerEvent: {}
+[0.905435] (-) TimerEvent: {}
+[1.006065] (-) TimerEvent: {}
+[1.106458] (-) TimerEvent: {}
+[1.206939] (-) TimerEvent: {}
+[1.307640] (-) TimerEvent: {}
+[1.408506] (-) TimerEvent: {}
+[1.509328] (-) TimerEvent: {}
+[1.610149] (-) TimerEvent: {}
+[1.711037] (-) TimerEvent: {}
+[1.811723] (-) TimerEvent: {}
+[1.912298] (-) TimerEvent: {}
+[2.013284] (-) TimerEvent: {}
+[2.113973] (-) TimerEvent: {}
+[2.214950] (-) TimerEvent: {}
+[2.315401] (-) TimerEvent: {}
+[2.416229] (-) TimerEvent: {}
+[2.518516] (-) TimerEvent: {}
+[2.619046] (-) TimerEvent: {}
+[2.719701] (-) TimerEvent: {}
+[2.820278] (-) TimerEvent: {}
+[2.920864] (-) TimerEvent: {}
+[3.021490] (-) TimerEvent: {}
+[3.122326] (-) TimerEvent: {}
+[3.222884] (-) TimerEvent: {}
+[3.323478] (-) TimerEvent: {}
+[3.424103] (-) TimerEvent: {}
+[3.525396] (-) TimerEvent: {}
+[3.627138] (-) TimerEvent: {}
+[3.727940] (-) TimerEvent: {}
+[3.828636] (-) TimerEvent: {}
+[3.929514] (-) TimerEvent: {}
+[4.030653] (-) TimerEvent: {}
+[4.080486] (gazebo_ros_bridge) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/gazebo_ros_bridge', 'build', '--build-base', '/home/shibin/ws_sensor_combined/build/gazebo_ros_bridge/build', 'install', '--record', '/home/shibin/ws_sensor_combined/build/gazebo_ros_bridge/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/shibin/ws_sensor_combined/src/gazebo_ros_bridge', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/home/shibin/PX4-Autopilot/Tools/simulation/gz/models:/home/shibin/PX4-Autopilot/Tools/simulation/gz/worlds:', 'LANGUAGE': 'en_IN:en', 'USER': 'shibin', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/shibin/ws_sensor_combined/install/px4_ros_com/lib:/home/shibin/ws_sensor_combined/install/px4_msgs/lib:/home/shibin/project_ws/install/tutorial_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/ortools_vendor/lib:/opt/ros/humble/lib', 'HOME': '/home/shibin', 'OLDPWD': '/home/shibin', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '5029', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/shibin/project_ws/install:/home/shibin/ws_sensor_combined/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'shibin', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'shibin', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/opt/ortools_vendor/bin:/opt/ros/humble/bin:/home/shibin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/shibin-Mi-NoteBook:@/tmp/.ICE-unix/1116,unix/shibin-Mi-NoteBook:/tmp/.ICE-unix/1116', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/5bb58508_9fa5_4bea_a021_eed717ab8e57', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.427G12', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.127', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/shibin/ws_sensor_combined/install/px4_ros_com:/home/shibin/ws_sensor_combined/install/px4_msgs:/home/shibin/ws_sensor_combined/install/gazebo_ros_bridge:/home/shibin/project_ws/install/tutorial_interfaces:/home/shibin/project_ws/install/serp_rl:/home/shibin/project_ws/install/project_pkg:/home/shibin/project_ws/install/drone_simulation:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GZ_VERSION': 'harmonic', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/shibin/ws_sensor_combined/build/gazebo_ros_bridge', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/shibin/ws_sensor_combined/build/gazebo_ros_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/shibin/ws_sensor_combined/install/gazebo_ros_bridge/lib/python3.10/site-packages:/home/shibin/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/shibin/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/home/shibin/ws_sensor_combined/install/gazebo_ros_bridge/lib/python3.10/site-packages:/home/shibin/project_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:/home/shibin/project_ws/install/serp_rl/lib/python3.10/site-packages:/home/shibin/project_ws/install/project_pkg/lib/python3.10/site-packages:/home/shibin/project_ws/install/drone_simulation/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/shibin/ws_sensor_combined/install/px4_ros_com:/home/shibin/ws_sensor_combined/install/px4_msgs:/home/shibin/project_ws/install/tutorial_interfaces'}, 'shell': False}
+[4.097618] (rrt_package) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/rrt_package', 'build', '--build-base', '/home/shibin/ws_sensor_combined/build/rrt_package/build', 'install', '--record', '/home/shibin/ws_sensor_combined/build/rrt_package/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/shibin/ws_sensor_combined/src/rrt_package', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/home/shibin/PX4-Autopilot/Tools/simulation/gz/models:/home/shibin/PX4-Autopilot/Tools/simulation/gz/worlds:', 'LANGUAGE': 'en_IN:en', 'USER': 'shibin', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/shibin/ws_sensor_combined/install/px4_ros_com/lib:/home/shibin/ws_sensor_combined/install/px4_msgs/lib:/home/shibin/project_ws/install/tutorial_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/ortools_vendor/lib:/opt/ros/humble/lib', 'HOME': '/home/shibin', 'OLDPWD': '/home/shibin', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '5029', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/shibin/project_ws/install:/home/shibin/ws_sensor_combined/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'shibin', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'shibin', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/opt/ortools_vendor/bin:/opt/ros/humble/bin:/home/shibin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/shibin-Mi-NoteBook:@/tmp/.ICE-unix/1116,unix/shibin-Mi-NoteBook:/tmp/.ICE-unix/1116', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/5bb58508_9fa5_4bea_a021_eed717ab8e57', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.427G12', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.127', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/shibin/ws_sensor_combined/install/px4_ros_com:/home/shibin/ws_sensor_combined/install/px4_msgs:/home/shibin/ws_sensor_combined/install/gazebo_ros_bridge:/home/shibin/project_ws/install/tutorial_interfaces:/home/shibin/project_ws/install/serp_rl:/home/shibin/project_ws/install/project_pkg:/home/shibin/project_ws/install/drone_simulation:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GZ_VERSION': 'harmonic', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/shibin/ws_sensor_combined/build/rrt_package', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/shibin/ws_sensor_combined/build/rrt_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/shibin/ws_sensor_combined/install/rrt_package/lib/python3.10/site-packages:/home/shibin/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/shibin/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/home/shibin/ws_sensor_combined/install/gazebo_ros_bridge/lib/python3.10/site-packages:/home/shibin/project_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:/home/shibin/project_ws/install/serp_rl/lib/python3.10/site-packages:/home/shibin/project_ws/install/project_pkg/lib/python3.10/site-packages:/home/shibin/project_ws/install/drone_simulation/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/shibin/ws_sensor_combined/install/px4_ros_com:/home/shibin/ws_sensor_combined/install/px4_msgs:/home/shibin/project_ws/install/tutorial_interfaces'}, 'shell': False}
+[4.130773] (-) TimerEvent: {}
+[4.232283] (-) TimerEvent: {}
+[4.333141] (-) TimerEvent: {}
+[4.433653] (-) TimerEvent: {}
+[4.534485] (-) TimerEvent: {}
+[4.634976] (-) TimerEvent: {}
+[4.735775] (-) TimerEvent: {}
+[4.836711] (-) TimerEvent: {}
+[4.937409] (-) TimerEvent: {}
+[5.038175] (-) TimerEvent: {}
+[5.138677] (-) TimerEvent: {}
+[5.239221] (-) TimerEvent: {}
+[5.339751] (-) TimerEvent: {}
+[5.440195] (-) TimerEvent: {}
+[5.451583] (gazebo_ros_bridge) StdoutLine: {'line': b'running egg_info\n'}
+[5.456581] (gazebo_ros_bridge) StdoutLine: {'line': b'writing ../../build/gazebo_ros_bridge/gazebo_ros_bridge.egg-info/PKG-INFO\n'}
+[5.456916] (gazebo_ros_bridge) StdoutLine: {'line': b'writing dependency_links to ../../build/gazebo_ros_bridge/gazebo_ros_bridge.egg-info/dependency_links.txt\n'}
+[5.457148] (gazebo_ros_bridge) StdoutLine: {'line': b'writing entry points to ../../build/gazebo_ros_bridge/gazebo_ros_bridge.egg-info/entry_points.txt\n'}
+[5.457336] (gazebo_ros_bridge) StdoutLine: {'line': b'writing requirements to ../../build/gazebo_ros_bridge/gazebo_ros_bridge.egg-info/requires.txt\n'}
+[5.457533] (gazebo_ros_bridge) StdoutLine: {'line': b'writing top-level names to ../../build/gazebo_ros_bridge/gazebo_ros_bridge.egg-info/top_level.txt\n'}
+[5.465254] (gazebo_ros_bridge) StdoutLine: {'line': b"reading manifest file '../../build/gazebo_ros_bridge/gazebo_ros_bridge.egg-info/SOURCES.txt'\n"}
+[5.468733] (gazebo_ros_bridge) StdoutLine: {'line': b"writing manifest file '../../build/gazebo_ros_bridge/gazebo_ros_bridge.egg-info/SOURCES.txt'\n"}
+[5.473058] (gazebo_ros_bridge) StdoutLine: {'line': b'running build\n'}
+[5.473633] (gazebo_ros_bridge) StdoutLine: {'line': b'running build_py\n'}
+[5.474282] (gazebo_ros_bridge) StdoutLine: {'line': b'running install\n'}
+[5.474735] (gazebo_ros_bridge) StdoutLine: {'line': b'running install_lib\n'}
+[5.479855] (gazebo_ros_bridge) StdoutLine: {'line': b'running install_data\n'}
+[5.480357] (gazebo_ros_bridge) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.485135] (gazebo_ros_bridge) StdoutLine: {'line': b"removing '/home/shibin/ws_sensor_combined/install/gazebo_ros_bridge/lib/python3.10/site-packages/gazebo_ros_bridge-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[5.487841] (gazebo_ros_bridge) StdoutLine: {'line': b'Copying ../../build/gazebo_ros_bridge/gazebo_ros_bridge.egg-info to /home/shibin/ws_sensor_combined/install/gazebo_ros_bridge/lib/python3.10/site-packages/gazebo_ros_bridge-0.0.0-py3.10.egg-info\n'}
+[5.490996] (gazebo_ros_bridge) StdoutLine: {'line': b'running install_scripts\n'}
+[5.498812] (rrt_package) StdoutLine: {'line': b'running egg_info\n'}
+[5.500212] (rrt_package) StdoutLine: {'line': b'writing ../../build/rrt_package/rrt_package.egg-info/PKG-INFO\n'}
+[5.501420] (rrt_package) StdoutLine: {'line': b'writing dependency_links to ../../build/rrt_package/rrt_package.egg-info/dependency_links.txt\n'}
+[5.502193] (rrt_package) StdoutLine: {'line': b'writing entry points to ../../build/rrt_package/rrt_package.egg-info/entry_points.txt\n'}
+[5.503174] (rrt_package) StdoutLine: {'line': b'writing requirements to ../../build/rrt_package/rrt_package.egg-info/requires.txt\n'}
+[5.503984] (rrt_package) StdoutLine: {'line': b'writing top-level names to ../../build/rrt_package/rrt_package.egg-info/top_level.txt\n'}
+[5.512709] (rrt_package) StdoutLine: {'line': b"reading manifest file '../../build/rrt_package/rrt_package.egg-info/SOURCES.txt'\n"}
+[5.513569] (rrt_package) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[5.516021] (rrt_package) StdoutLine: {'line': b"writing manifest file '../../build/rrt_package/rrt_package.egg-info/SOURCES.txt'\n"}
+[5.516558] (rrt_package) StdoutLine: {'line': b'running build\n'}
+[5.516822] (rrt_package) StdoutLine: {'line': b'running build_py\n'}
+[5.517639] (rrt_package) StdoutLine: {'line': b'running install\n'}
+[5.519342] (rrt_package) StdoutLine: {'line': b'running install_lib\n'}
+[5.525908] (rrt_package) StdoutLine: {'line': b'running install_data\n'}
+[5.526577] (rrt_package) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.534648] (rrt_package) StdoutLine: {'line': b"removing '/home/shibin/ws_sensor_combined/install/rrt_package/lib/python3.10/site-packages/rrt_package-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[5.536773] (rrt_package) StdoutLine: {'line': b'Copying ../../build/rrt_package/rrt_package.egg-info to /home/shibin/ws_sensor_combined/install/rrt_package/lib/python3.10/site-packages/rrt_package-0.0.0-py3.10.egg-info\n'}
+[5.541461] (rrt_package) StdoutLine: {'line': b'running install_scripts\n'}
+[5.542021] (-) TimerEvent: {}
+[5.582717] (gazebo_ros_bridge) StdoutLine: {'line': b"writing list of installed files to '/home/shibin/ws_sensor_combined/build/gazebo_ros_bridge/install.log'\n"}
+[5.638195] (rrt_package) StdoutLine: {'line': b'Installing my_node script to /home/shibin/ws_sensor_combined/install/rrt_package/lib/rrt_package\n'}
+[5.640075] (rrt_package) StdoutLine: {'line': b"writing list of installed files to '/home/shibin/ws_sensor_combined/build/rrt_package/install.log'\n"}
+[5.642197] (-) TimerEvent: {}
+[5.723424] (gazebo_ros_bridge) CommandEnded: {'returncode': 0}
+[5.743490] (-) TimerEvent: {}
+[5.785708] (gazebo_ros_bridge) JobEnded: {'identifier': 'gazebo_ros_bridge', 'rc': 0}
+[5.790962] (rrt_package) CommandEnded: {'returncode': 0}
+[5.825231] (rrt_package) JobEnded: {'identifier': 'rrt_package', 'rc': 0}
+[5.843681] (-) TimerEvent: {}
+[5.944275] (-) TimerEvent: {}
+[6.044909] (-) TimerEvent: {}
+[6.145323] (-) TimerEvent: {}
+[6.245793] (-) TimerEvent: {}
+[6.346445] (-) TimerEvent: {}
+[6.446928] (-) TimerEvent: {}
+[6.547585] (-) TimerEvent: {}
+[6.648197] (-) TimerEvent: {}
+[6.748940] (-) TimerEvent: {}
+[6.849572] (-) TimerEvent: {}
+[6.950011] (-) TimerEvent: {}
+[7.050447] (-) TimerEvent: {}
+[7.151058] (-) TimerEvent: {}
+[7.251845] (-) TimerEvent: {}
+[7.272313] (px4_msgs) StdoutLine: {'line': b'[  0%] Built target px4_msgs__cpp\n'}
+[7.323857] (px4_msgs) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_copy_px4_msgs\n'}
+[7.333533] (px4_msgs) StdoutLine: {'line': b'[ 12%] Built target px4_msgs__rosidl_generator_c\n'}
+[7.351932] (-) TimerEvent: {}
+[7.453779] (-) TimerEvent: {}
+[7.546767] (px4_msgs) StdoutLine: {'line': b'[ 24%] Built target px4_msgs__rosidl_typesupport_cpp\n'}
+[7.553753] (px4_msgs) StdoutLine: {'line': b'[ 37%] Built target px4_msgs__rosidl_typesupport_c\n'}
+[7.554074] (-) TimerEvent: {}
+[7.582548] (px4_msgs) StdoutLine: {'line': b'[ 50%] Built target px4_msgs__rosidl_typesupport_introspection_c\n'}
+[7.654329] (-) TimerEvent: {}
+[7.656945] (px4_msgs) StdoutLine: {'line': b'[ 62%] Built target px4_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[7.663623] (px4_msgs) StdoutLine: {'line': b'[ 75%] Built target px4_msgs__rosidl_typesupport_introspection_cpp\n'}
+[7.755065] (-) TimerEvent: {}
+[7.792339] (px4_msgs) StdoutLine: {'line': b'[ 88%] Built target px4_msgs__rosidl_typesupport_fastrtps_c\n'}
+[7.855189] (-) TimerEvent: {}
+[7.863478] (px4_msgs) StdoutLine: {'line': b'[ 88%] Built target px4_msgs\n'}
+[7.955502] (-) TimerEvent: {}
+[7.987733] (px4_msgs) StdoutLine: {'line': b'[ 88%] Built target px4_msgs__py\n'}
+[8.055695] (-) TimerEvent: {}
+[8.156701] (-) TimerEvent: {}
+[8.257898] (-) TimerEvent: {}
+[8.358542] (-) TimerEvent: {}
+[8.383425] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__rosidl_generator_py\n'}
+[8.458697] (-) TimerEvent: {}
+[8.469782] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[8.479381] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__rosidl_typesupport_c__pyext\n'}
+[8.488746] (px4_msgs) StdoutLine: {'line': b'[100%] Built target px4_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[8.558867] (-) TimerEvent: {}
+[8.593544] (px4_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[8.597552] (px4_msgs) StdoutLine: {'line': b'writing px4_msgs.egg-info/PKG-INFO\n'}
+[8.598716] (px4_msgs) StdoutLine: {'line': b'writing dependency_links to px4_msgs.egg-info/dependency_links.txt\n'}
+[8.599242] (px4_msgs) StdoutLine: {'line': b'writing top-level names to px4_msgs.egg-info/top_level.txt\n'}
+[8.616394] (px4_msgs) StdoutLine: {'line': b"reading manifest file 'px4_msgs.egg-info/SOURCES.txt'\n"}
+[8.629143] (px4_msgs) StdoutLine: {'line': b"writing manifest file 'px4_msgs.egg-info/SOURCES.txt'\n"}
+[8.659079] (-) TimerEvent: {}
+[8.752342] (px4_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_px4_msgs_egg\n'}
+[8.759240] (-) TimerEvent: {}
+[8.790145] (px4_msgs) CommandEnded: {'returncode': 0}
+[8.796444] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'install'}
+[8.823315] (px4_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/shibin/ws_sensor_combined/build/px4_msgs'], 'cwd': '/home/shibin/ws_sensor_combined/build/px4_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GZ_SIM_RESOURCE_PATH', '/home/shibin/PX4-Autopilot/Tools/simulation/gz/models:/home/shibin/PX4-Autopilot/Tools/simulation/gz/worlds:'), ('LANGUAGE', 'en_IN:en'), ('USER', 'shibin'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/shibin/ws_sensor_combined/install/px4_ros_com/lib:/home/shibin/ws_sensor_combined/install/px4_msgs/lib:/home/shibin/project_ws/install/tutorial_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/ortools_vendor/lib:/opt/ros/humble/lib'), ('HOME', '/home/shibin'), ('OLDPWD', '/home/shibin'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '5029'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/shibin/project_ws/install:/home/shibin/ws_sensor_combined/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'shibin'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'shibin'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/opt/ortools_vendor/bin:/opt/ros/humble/bin:/home/shibin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/shibin-Mi-NoteBook:@/tmp/.ICE-unix/1116,unix/shibin-Mi-NoteBook:/tmp/.ICE-unix/1116'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5bb58508_9fa5_4bea_a021_eed717ab8e57'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.427G12'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.127'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/shibin/ws_sensor_combined/install/px4_ros_com:/home/shibin/ws_sensor_combined/install/px4_msgs:/home/shibin/ws_sensor_combined/install/gazebo_ros_bridge:/home/shibin/project_ws/install/tutorial_interfaces:/home/shibin/project_ws/install/serp_rl:/home/shibin/project_ws/install/project_pkg:/home/shibin/project_ws/install/drone_simulation:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GZ_VERSION', 'harmonic'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/shibin/ws_sensor_combined/build/px4_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/shibin/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/shibin/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/home/shibin/ws_sensor_combined/install/gazebo_ros_bridge/lib/python3.10/site-packages:/home/shibin/project_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:/home/shibin/project_ws/install/serp_rl/lib/python3.10/site-packages:/home/shibin/project_ws/install/project_pkg/lib/python3.10/site-packages:/home/shibin/project_ws/install/drone_simulation/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/shibin/ws_sensor_combined/install/px4_ros_com:/home/shibin/ws_sensor_combined/install/px4_msgs:/home/shibin/project_ws/install/tutorial_interfaces:/home/shibin/ws_sensor_combined/install/gazebo_ros_bridge:/home/shibin/project_ws/install/serp_rl:/home/shibin/project_ws/install/project_pkg:/home/shibin/project_ws/install/drone_simulation:/opt/ros/humble')]), 'shell': False}
+[8.852838] (px4_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.853626] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs\n'}
+[8.853911] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg\n'}
+[8.856097] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail\n'}
+[8.857415] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__functions.c\n'}
+[8.858285] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gripper__functions.c\n'}
+[8.858883] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/log_message__functions.c\n'}
+[8.859650] (-) TimerEvent: {}
+[8.860465] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rc_channels__functions.c\n'}
+[8.860862] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/orb_test__functions.c\n'}
+[8.861762] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_request__functions.c\n'}
+[8.862129] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/pps_capture__functions.c\n'}
+[8.862347] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vtol_vehicle_status__functions.c\n'}
+[8.863705] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gpio_request__functions.c\n'}
+[8.865171] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/led_control__functions.c\n'}
+[8.866738] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gimbal_manager_set_attitude__functions.c\n'}
+[8.867681] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_motors__functions.c\n'}
+[8.868119] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/qshell_req__functions.c\n'}
+[8.868478] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/geofence_result__functions.c\n'}
+[8.868744] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/internal_combustion_engine_status__functions.c\n'}
+[8.868935] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_event_flags__functions.c\n'}
+[8.869187] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mavlink_tunnel__functions.c\n'}
+[8.869386] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/parameter_set_used_request__functions.c\n'}
+[8.870382] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/onboard_computer_status__functions.c\n'}
+[8.871127] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/launch_detection_status__functions.c\n'}
+[8.871894] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/satellite_info__functions.c\n'}
+[8.872409] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/parameter_set_value_request__functions.c\n'}
+[8.873079] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/power_button_state__functions.c\n'}
+[8.873486] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gimbal_device_attitude_status__functions.c\n'}
+[8.874257] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_setpoint_triplet__functions.c\n'}
+[8.874698] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/ulog_stream_ack__functions.c\n'}
+[8.874898] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_baro__functions.c\n'}
+[8.875083] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/flight_phase_estimation__functions.c\n'}
+[8.875232] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_gps__functions.c\n'}
+[8.875397] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/health_report__functions.c\n'}
+[8.875552] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rtl_status__functions.c\n'}
+[8.875675] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__functions.c\n'}
+[8.875944] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_land_detected__functions.c\n'}
+[8.876325] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/open_drone_id_system__functions.c\n'}
+[8.877069] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rover_mecanum_setpoint__functions.c\n'}
+[8.877755] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/cellular_status__functions.c\n'}
+[8.878204] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_roi__functions.c\n'}
+[8.878601] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gpio_config__functions.c\n'}
+[8.879595] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/dataman_response__functions.c\n'}
+[8.880048] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/failure_detector_status__functions.c\n'}
+[8.880766] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/radio_status__functions.c\n'}
+[8.882181] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/unregister_ext_component__functions.c\n'}
+[8.882659] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/yaw_estimator_status__functions.c\n'}
+[8.882918] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rover_mecanum_guidance_status__functions.c\n'}
+[8.883338] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rover_ackermann_status__functions.c\n'}
+[8.883734] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_thrust_setpoint__functions.c\n'}
+[8.883965] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/debug_value__functions.c\n'}
+[8.884153] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_request__functions.c\n'}
+[8.884332] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_status__functions.c\n'}
+[8.884547] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.c\n'}
+[8.884728] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/airspeed_wind__functions.c\n'}
+[8.884929] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/open_drone_id_self_id__functions.c\n'}
+[8.885096] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/pwm_input__functions.c\n'}
+[8.885287] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/velocity_limits__functions.c\n'}
+[8.885951] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensors_status__functions.c\n'}
+[8.886664] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_controller_status__functions.c\n'}
+[8.887157] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/debug_vect__functions.c\n'}
+[8.887419] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_controls_status__functions.c\n'}
+[8.887635] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mission__functions.c\n'}
+[8.887802] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/message_format_request__functions.c\n'}
+[8.887960] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_servos__functions.c\n'}
+[8.888108] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_aid_source3d__functions.c\n'}
+[8.888261] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_hygrometer__functions.c\n'}
+[8.888487] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/airspeed_validated__functions.c\n'}
+[8.889132] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_optical_flow__functions.c\n'}
+[8.889662] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_selection__functions.c\n'}
+[8.890142] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_magnetometer__functions.c\n'}
+[8.890695] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/takeoff_status__functions.c\n'}
+[8.891219] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__functions.c\n'}
+[8.891740] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/collision_constraints__functions.c\n'}
+[8.892197] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__functions.c\n'}
+[8.892596] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_combined__functions.c\n'}
+[8.892984] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/hover_thrust_estimate__functions.c\n'}
+[8.893767] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/follow_target_estimator__functions.c\n'}
+[8.894330] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_correction__functions.c\n'}
+[8.894937] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/manual_control_switches__functions.c\n'}
+[8.895995] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/message_format_response__functions.c\n'}
+[8.897194] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mavlink_log__functions.c\n'}
+[8.897744] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gpio_out__functions.c\n'}
+[8.897985] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rc_parameter_map__functions.c\n'}
+[8.898264] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_airflow__functions.c\n'}
+[8.898524] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_constraints__functions.c\n'}
+[8.898754] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/camera_trigger__functions.c\n'}
+[8.898924] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mode_completed__functions.c\n'}
+[8.899081] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/debug_key_value__functions.c\n'}
+[8.899231] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rover_ackermann_setpoint__functions.c\n'}
+[8.899410] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_accel__functions.c\n'}
+[8.899677] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__functions.c\n'}
+[8.900483] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gimbal_device_set_attitude__functions.c\n'}
+[8.900968] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__functions.c\n'}
+[8.901452] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rover_mecanum_status__functions.c\n'}
+[8.901823] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_imu__functions.c\n'}
+[8.902327] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/task_stack_info__functions.c\n'}
+[8.903228] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/magnetometer_bias_estimate__functions.c\n'}
+[8.904030] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/figure_eight_status__functions.c\n'}
+[8.904438] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gpio_in__functions.c\n'}
+[8.904910] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/goto_setpoint__functions.c\n'}
+[8.905320] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_gyro_fifo__functions.c\n'}
+[8.905892] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/navigator_status__functions.c\n'}
+[8.906353] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/manual_control_setpoint__functions.c\n'}
+[8.906947] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/debug_array__functions.c\n'}
+[8.907316] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/button_event__functions.c\n'}
+[8.907661] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_acceleration__functions.c\n'}
+[8.907954] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/irlock_report__functions.c\n'}
+[8.908267] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/follow_target__functions.c\n'}
+[8.908926] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mount_orientation__functions.c\n'}
+[8.909434] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_outputs__functions.c\n'}
+[8.909856] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_torque_setpoint__functions.c\n'}
+[8.910356] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_servos_trim__functions.c\n'}
+[8.910715] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/geofence_status__functions.c\n'}
+[8.910954] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/telemetry_status__functions.c\n'}
+[8.911195] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/navigator_mission_item__functions.c\n'}
+[8.911599] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/home_position__functions.c\n'}
+[8.912103] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_imu_status__functions.c\n'}
+[8.912448] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/transponder_report__functions.c\n'}
+[8.912997] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/npfg_status__functions.c\n'}
+[8.913406] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_optical_flow__functions.c\n'}
+[8.913686] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rover_differential_guidance_status__functions.c\n'}
+[8.913865] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/ulog_stream__functions.c\n'}
+[8.914010] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/landing_target_innovations__functions.c\n'}
+[8.914201] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_gyro__functions.c\n'}
+[8.914353] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rtl_time_estimate__functions.c\n'}
+[8.914588] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/px4io_status__functions.c\n'}
+[8.915546] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position_setpoint__functions.c\n'}
+[8.916204] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_angular_acceleration_setpoint__functions.c\n'}
+[8.916581] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/parameter_set_value_response__functions.c\n'}
+[8.916987] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/system_power__functions.c\n'}
+[8.917462] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_air_data__functions.c\n'}
+[8.917741] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/dataman_request__functions.c\n'}
+[8.917944] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gimbal_manager_set_manual_control__functions.c\n'}
+[8.918136] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/fuel_tank_status__functions.c\n'}
+[8.918402] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_aid_source1d__functions.c\n'}
+[8.918596] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/open_drone_id_operator_id__functions.c\n'}
+[8.918759] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_preflight_mag__functions.c\n'}
+[8.918919] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/tune_control__functions.c\n'}
+[8.919076] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensors_status_imu__functions.c\n'}
+[8.919239] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/landing_gear__functions.c\n'}
+[8.919405] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_bias__functions.c\n'}
+[8.919576] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gimbal_controls__functions.c\n'}
+[8.920099] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/uavcan_parameter_value__functions.c\n'}
+[8.920760] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/tiltrotor_extra_controls__functions.c\n'}
+[8.921023] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_accel_fifo__functions.c\n'}
+[8.921323] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/timesync_status__functions.c\n'}
+[8.921729] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rover_differential_status__functions.c\n'}
+[8.922502] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/wind__functions.c\n'}
+[8.923118] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_selector_status__functions.c\n'}
+[8.923757] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/esc_status__functions.c\n'}
+[8.924214] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/orb_test_large__functions.c\n'}
+[8.924608] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/landing_gear_wheel__functions.c\n'}
+[8.925468] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/obstacle_distance__functions.c\n'}
+[8.926251] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rate_ctrl_status__functions.c\n'}
+[8.926571] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rover_differential_setpoint__functions.c\n'}
+[8.926832] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/power_monitor__functions.c\n'}
+[8.927560] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/battery_status__functions.c\n'}
+[8.928837] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/parameter_reset_request__functions.c\n'}
+[8.929245] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/distance_sensor__functions.c\n'}
+[8.929540] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mission_result__functions.c\n'}
+[8.929856] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__functions.c\n'}
+[8.930733] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/orbit_status__functions.c\n'}
+[8.931137] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gimbal_manager_status__functions.c\n'}
+[8.931516] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/input_rc__functions.c\n'}
+[8.931747] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_controller_landing_status__functions.c\n'}
+[8.931954] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_test__functions.c\n'}
+[8.932172] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/camera_capture__functions.c\n'}
+[8.932385] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/ping__functions.c\n'}
+[8.932765] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/qshell_retval__functions.c\n'}
+[8.932966] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_aid_source2d__functions.c\n'}
+[8.933158] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/esc_report__functions.c\n'}
+[8.933351] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/airspeed__functions.c\n'}
+[8.933514] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/iridiumsbd_status__functions.c\n'}
+[8.933646] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_gnss_relative__functions.c\n'}
+[8.933760] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_gps_status__functions.c\n'}
+[8.933880] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/failsafe_flags__functions.c\n'}
+[8.933996] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_gyro_fft__functions.c\n'}
+[8.934118] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/ekf2_timestamps__functions.c\n'}
+[8.934262] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gps_dump__functions.c\n'}
+[8.935142] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__functions.c\n'}
+[8.935636] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rpm__functions.c\n'}
+[8.935919] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__functions.c\n'}
+[8.936481] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/orb_test_medium__functions.c\n'}
+[8.937018] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/control_allocator_status__functions.c\n'}
+[8.938109] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mag_worker_data__functions.c\n'}
+[8.938954] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/can_interface_status__functions.c\n'}
+[8.940237] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gps_inject_data__functions.c\n'}
+[8.940816] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_states__functions.c\n'}
+[8.941232] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_sensor_bias__functions.c\n'}
+[8.941671] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude__functions.c\n'}
+[8.941881] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_trajectory_bezier__functions.c\n'}
+[8.942031] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/open_drone_id_arm_status__functions.c\n'}
+[8.942215] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/buffer128__functions.c\n'}
+[8.942376] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/uavcan_parameter_request__functions.c\n'}
+[8.942594] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rover_ackermann_guidance_status__functions.c\n'}
+[8.942890] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_armed__functions.c\n'}
+[8.943236] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_mag__functions.c\n'}
+[8.943631] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/cpuload__functions.c\n'}
+[8.943971] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/wheel_encoders__functions.c\n'}
+[8.944732] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_status_flags__functions.c\n'}
+[8.945490] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/landing_target_pose__functions.c\n'}
+[8.946432] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/parameter_update__functions.c\n'}
+[8.947021] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gimbal_device_information__functions.c\n'}
+[8.947459] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/heater_status__functions.c\n'}
+[8.947732] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_bezier__functions.c\n'}
+[8.948092] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_angular_velocity__functions.c\n'}
+[8.948733] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_waypoint__functions.c\n'}
+[8.949092] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_rates_setpoint__functions.c\n'}
+[8.949320] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/differential_pressure__functions.c\n'}
+[8.949569] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_global_position__functions.c\n'}
+[8.949736] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/logger_status__functions.c\n'}
+[8.949899] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_optical_flow_vel__functions.c\n'}
+[8.950134] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/camera_status__functions.c\n'}
+[8.950676] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_bias3d__functions.c\n'}
+[8.951953] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/action_request__functions.c\n'}
+[8.952402] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/generator_status__functions.c\n'}
+[8.952982] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_reply__functions.c\n'}
+[8.953328] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_uwb__functions.c\n'}
+[8.953687] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_trajectory_waypoint__functions.c\n'}
+[8.953972] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_innovations__functions.c\n'}
+[8.954317] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude_setpoint__functions.c\n'}
+[8.954685] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/tecs_status__functions.c\n'}
+[8.954960] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_setpoint__functions.c\n'}
+[8.955171] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gimbal_manager_information__functions.c\n'}
+[8.955877] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/adc_report__functions.c\n'}
+[8.956742] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__functions.c\n'}
+[8.957075] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/normalized_unsigned_setpoint__functions.c\n'}
+[8.958231] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/autotune_attitude_control_status__functions.c\n'}
+[8.958838] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/follow_target_status__functions.c\n'}
+[8.959135] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command_ack__functions.c\n'}
+[8.959334] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/srv\n'}
+[8.960124] (-) TimerEvent: {}
+[8.960474] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/srv/detail\n'}
+[8.961188] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/srv/detail/vehicle_command__functions.c\n'}
+[8.961588] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/lib/libpx4_msgs__rosidl_generator_c.so\n'}
+[8.961826] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs\n'}
+[8.962044] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg\n'}
+[8.962243] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail\n'}
+[8.962458] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/srv\n'}
+[8.962571] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/srv/detail\n'}
+[8.962678] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[8.962855] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs\n'}
+[8.962951] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg\n'}
+[8.963183] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail\n'}
+[8.963303] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/srv\n'}
+[8.963528] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/srv/detail\n'}
+[8.963744] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs\n'}
+[8.963994] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg\n'}
+[8.964268] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail\n'}
+[8.964631] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/dds_fastrtps\n'}
+[8.964884] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/srv\n'}
+[8.965076] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/srv/detail\n'}
+[8.965289] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/srv/detail/dds_fastrtps\n'}
+[8.965652] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[8.965896] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs\n'}
+[8.966055] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg\n'}
+[8.966223] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail\n'}
+[8.966536] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mission__type_support.c\n'}
+[8.966786] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_motors__type_support.c\n'}
+[8.967071] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rover_mecanum_guidance_status__type_support.c\n'}
+[8.967291] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/magnetometer_bias_estimate__type_support.c\n'}
+[8.967459] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/follow_target_status__type_support.c\n'}
+[8.967567] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/ulog_stream_ack__type_support.c\n'}
+[8.967654] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gimbal_device_set_attitude__type_support.c\n'}
+[8.967792] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/pwm_input__type_support.c\n'}
+[8.967930] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_request__type_support.c\n'}
+[8.968285] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_hygrometer__type_support.c\n'}
+[8.968621] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gimbal_manager_set_attitude__type_support.c\n'}
+[8.968785] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_correction__type_support.c\n'}
+[8.968940] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/cellular_status__type_support.c\n'}
+[8.969071] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/debug_vect__type_support.c\n'}
+[8.969180] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rate_ctrl_status__type_support.c\n'}
+[8.969307] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_servos_trim__type_support.c\n'}
+[8.969736] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/open_drone_id_self_id__type_support.c\n'}
+[8.969997] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gps_inject_data__type_support.c\n'}
+[8.970195] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/qshell_req__type_support.c\n'}
+[8.970396] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gripper__type_support.c\n'}
+[8.970616] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/fuel_tank_status__type_support.c\n'}
+[8.970798] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mavlink_tunnel__type_support.c\n'}
+[8.971202] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__type_support.c\n'}
+[8.971592] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rtl_time_estimate__type_support.c\n'}
+[8.971807] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/px4io_status__type_support.c\n'}
+[8.971943] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/navigator_mission_item__type_support.c\n'}
+[8.972098] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_selection__type_support.c\n'}
+[8.972316] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/wind__type_support.c\n'}
+[8.972580] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__type_support.c\n'}
+[8.972830] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/button_event__type_support.c\n'}
+[8.973039] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_armed__type_support.c\n'}
+[8.973144] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_uwb__type_support.c\n'}
+[8.973260] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mode_completed__type_support.c\n'}
+[8.973407] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/logger_status__type_support.c\n'}
+[8.973571] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__type_support.c\n'}
+[8.973699] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_controller_landing_status__type_support.c\n'}
+[8.973838] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_waypoint__type_support.c\n'}
+[8.974015] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vtol_vehicle_status__type_support.c\n'}
+[8.974173] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gimbal_manager_status__type_support.c\n'}
+[8.974420] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/dataman_response__type_support.c\n'}
+[8.974928] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/esc_status__type_support.c\n'}
+[8.975502] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/figure_eight_status__type_support.c\n'}
+[8.975899] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/orb_test_medium__type_support.c\n'}
+[8.976051] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/can_interface_status__type_support.c\n'}
+[8.976222] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_imu_status__type_support.c\n'}
+[8.976419] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_test__type_support.c\n'}
+[8.976647] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rc_parameter_map__type_support.c\n'}
+[8.976816] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/tiltrotor_extra_controls__type_support.c\n'}
+[8.976974] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gps_dump__type_support.c\n'}
+[8.977131] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_rates_setpoint__type_support.c\n'}
+[8.977321] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/parameter_set_value_response__type_support.c\n'}
+[8.977572] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rover_ackermann_status__type_support.c\n'}
+[8.977745] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/led_control__type_support.c\n'}
+[8.977903] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_angular_velocity__type_support.c\n'}
+[8.978071] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/heater_status__type_support.c\n'}
+[8.978204] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gimbal_device_information__type_support.c\n'}
+[8.978339] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rover_differential_guidance_status__type_support.c\n'}
+[8.978514] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/landing_gear_wheel__type_support.c\n'}
+[8.978711] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_combined__type_support.c\n'}
+[8.978961] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_roi__type_support.c\n'}
+[8.979236] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/goto_setpoint__type_support.c\n'}
+[8.979758] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/follow_target_estimator__type_support.c\n'}
+[8.980016] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rover_differential_status__type_support.c\n'}
+[8.980205] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_status_flags__type_support.c\n'}
+[8.980333] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/ekf2_timestamps__type_support.c\n'}
+[8.980515] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__type_support.c\n'}
+[8.980714] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/wheel_encoders__type_support.c\n'}
+[8.980969] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensors_status__type_support.c\n'}
+[8.981197] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/landing_target_pose__type_support.c\n'}
+[8.981358] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/timesync_status__type_support.c\n'}
+[8.981677] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/navigator_status__type_support.c\n'}
+[8.981928] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_acceleration__type_support.c\n'}
+[8.982110] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_bias__type_support.c\n'}
+[8.982266] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rc_channels__type_support.c\n'}
+[8.982482] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/buffer128__type_support.c\n'}
+[8.982640] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gimbal_manager_set_manual_control__type_support.c\n'}
+[8.982825] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/collision_constraints__type_support.c\n'}
+[8.982958] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_optical_flow__type_support.c\n'}
+[8.983085] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mavlink_log__type_support.c\n'}
+[8.983202] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/cpuload__type_support.c\n'}
+[8.983335] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_preflight_mag__type_support.c\n'}
+[8.983564] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mount_orientation__type_support.c\n'}
+[8.983742] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/open_drone_id_system__type_support.c\n'}
+[8.983951] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/npfg_status__type_support.c\n'}
+[8.984068] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/uavcan_parameter_value__type_support.c\n'}
+[8.984244] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/uavcan_parameter_request__type_support.c\n'}
+[8.984700] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_gyro__type_support.c\n'}
+[8.985358] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_gps__type_support.c\n'}
+[8.985644] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_gps_status__type_support.c\n'}
+[8.985886] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/dataman_request__type_support.c\n'}
+[8.986134] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensors_status_imu__type_support.c\n'}
+[8.986335] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__type_support.c\n'}
+[8.986574] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_gyro_fifo__type_support.c\n'}
+[8.986792] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_status__type_support.c\n'}
+[8.986941] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/camera_status__type_support.c\n'}
+[8.987117] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_setpoint_triplet__type_support.c\n'}
+[8.987295] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_magnetometer__type_support.c\n'}
+[8.987520] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/parameter_set_used_request__type_support.c\n'}
+[8.987823] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/airspeed_wind__type_support.c\n'}
+[8.988029] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/orb_test__type_support.c\n'}
+[8.988174] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gimbal_controls__type_support.c\n'}
+[8.988329] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/home_position__type_support.c\n'}
+[8.988545] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__type_support.c\n'}
+[8.988680] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/input_rc__type_support.c\n'}
+[8.988811] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/task_stack_info__type_support.c\n'}
+[8.988951] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_states__type_support.c\n'}
+[8.989080] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_gnss_relative__type_support.c\n'}
+[8.989445] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/orb_test_large__type_support.c\n'}
+[8.990462] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command_ack__type_support.c\n'}
+[8.991915] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_bias3d__type_support.c\n'}
+[8.992658] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/orbit_status__type_support.c\n'}
+[8.993182] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__type_support.c\n'}
+[8.993482] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_sensor_bias__type_support.c\n'}
+[8.993732] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rpm__type_support.c\n'}
+[8.993960] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gpio_request__type_support.c\n'}
+[8.994208] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.c\n'}
+[8.994451] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/transponder_report__type_support.c\n'}
+[8.994691] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_torque_setpoint__type_support.c\n'}
+[8.994869] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/telemetry_status__type_support.c\n'}
+[8.994999] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/radio_status__type_support.c\n'}
+[8.995126] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/autotune_attitude_control_status__type_support.c\n'}
+[8.995270] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_aid_source3d__type_support.c\n'}
+[8.996059] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/normalized_unsigned_setpoint__type_support.c\n'}
+[8.996281] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_mag__type_support.c\n'}
+[8.996458] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/adc_report__type_support.c\n'}
+[8.996682] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gimbal_device_attitude_status__type_support.c\n'}
+[8.996977] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/satellite_info__type_support.c\n'}
+[8.997325] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gpio_in__type_support.c\n'}
+[8.997737] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_servos__type_support.c\n'}
+[8.998115] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_imu__type_support.c\n'}
+[8.998651] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_constraints__type_support.c\n'}
+[8.999062] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rover_ackermann_guidance_status__type_support.c\n'}
+[8.999497] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_reply__type_support.c\n'}
+[9.000638] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_optical_flow__type_support.c\n'}
+[9.001310] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_optical_flow_vel__type_support.c\n'}
+[9.002048] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/failure_detector_status__type_support.c\n'}
+[9.002613] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/pps_capture__type_support.c\n'}
+[9.003060] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/power_button_state__type_support.c\n'}
+[9.003473] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/parameter_update__type_support.c\n'}
+[9.004236] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/airspeed_validated__type_support.c\n'}
+[9.004713] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__type_support.c\n'}
+[9.005130] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/irlock_report__type_support.c\n'}
+[9.005669] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_airflow__type_support.c\n'}
+[9.006033] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__type_support.c\n'}
+[9.006227] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/log_message__type_support.c\n'}
+[9.006360] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/ping__type_support.c\n'}
+[9.006683] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gpio_out__type_support.c\n'}
+[9.006962] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/debug_value__type_support.c\n'}
+[9.007322] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mag_worker_data__type_support.c\n'}
+[9.007642] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rover_mecanum_setpoint__type_support.c\n'}
+[9.007792] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__type_support.c\n'}
+[9.007891] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/qshell_retval__type_support.c\n'}
+[9.007995] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/manual_control_switches__type_support.c\n'}
+[9.008198] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/debug_key_value__type_support.c\n'}
+[9.008409] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_accel__type_support.c\n'}
+[9.008644] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/parameter_set_value_request__type_support.c\n'}
+[9.009031] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_setpoint__type_support.c\n'}
+[9.009244] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_land_detected__type_support.c\n'}
+[9.009425] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/tune_control__type_support.c\n'}
+[9.009565] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/velocity_limits__type_support.c\n'}
+[9.009672] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/unregister_ext_component__type_support.c\n'}
+[9.009810] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/action_request__type_support.c\n'}
+[9.010085] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position_setpoint__type_support.c\n'}
+[9.010347] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_selector_status__type_support.c\n'}
+[9.010929] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/health_report__type_support.c\n'}
+[9.011340] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gpio_config__type_support.c\n'}
+[9.011730] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/differential_pressure__type_support.c\n'}
+[9.011982] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/camera_capture__type_support.c\n'}
+[9.012149] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.c\n'}
+[9.012281] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/ulog_stream__type_support.c\n'}
+[9.012455] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_request__type_support.c\n'}
+[9.012652] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_baro__type_support.c\n'}
+[9.012862] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/geofence_status__type_support.c\n'}
+[9.013034] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/iridiumsbd_status__type_support.c\n'}
+[9.013192] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.c\n'}
+[9.013393] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_thrust_setpoint__type_support.c\n'}
+[9.013586] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_air_data__type_support.c\n'}
+[9.013744] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/onboard_computer_status__type_support.c\n'}
+[9.013898] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/tecs_status__type_support.c\n'}
+[9.014039] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gimbal_manager_information__type_support.c\n'}
+[9.014185] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_global_position__type_support.c\n'}
+[9.014286] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/launch_detection_status__type_support.c\n'}
+[9.014403] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/parameter_reset_request__type_support.c\n'}
+[9.014543] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude_setpoint__type_support.c\n'}
+[9.014798] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_innovations__type_support.c\n'}
+[9.015074] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_outputs__type_support.c\n'}
+[9.015309] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/control_allocator_status__type_support.c\n'}
+[9.015780] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/airspeed__type_support.c\n'}
+[9.016042] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/power_monitor__type_support.c\n'}
+[9.016160] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/takeoff_status__type_support.c\n'}
+[9.016258] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude__type_support.c\n'}
+[9.016343] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/camera_trigger__type_support.c\n'}
+[9.016734] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/message_format_request__type_support.c\n'}
+[9.017384] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.c\n'}
+[9.017754] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rover_mecanum_status__type_support.c\n'}
+[9.018055] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/follow_target__type_support.c\n'}
+[9.018337] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_gyro_fft__type_support.c\n'}
+[9.018784] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/geofence_result__type_support.c\n'}
+[9.019142] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/generator_status__type_support.c\n'}
+[9.019310] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/esc_report__type_support.c\n'}
+[9.019515] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rover_differential_setpoint__type_support.c\n'}
+[9.019834] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/landing_target_innovations__type_support.c\n'}
+[9.020494] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/manual_control_setpoint__type_support.c\n'}
+[9.020936] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/debug_array__type_support.c\n'}
+[9.021137] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_accel_fifo__type_support.c\n'}
+[9.021268] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_aid_source2d__type_support.c\n'}
+[9.021359] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rtl_status__type_support.c\n'}
+[9.021519] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/hover_thrust_estimate__type_support.c\n'}
+[9.021605] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/landing_gear__type_support.c\n'}
+[9.021713] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_bezier__type_support.c\n'}
+[9.021859] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rover_ackermann_setpoint__type_support.c\n'}
+[9.022511] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_angular_acceleration_setpoint__type_support.c\n'}
+[9.023173] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/battery_status__type_support.c\n'}
+[9.023646] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_aid_source1d__type_support.c\n'}
+[9.023861] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/system_power__type_support.c\n'}
+[9.024021] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_event_flags__type_support.c\n'}
+[9.024138] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/failsafe_flags__type_support.c\n'}
+[9.024248] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/flight_phase_estimation__type_support.c\n'}
+[9.024404] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_controller_status__type_support.c\n'}
+[9.024543] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/internal_combustion_engine_status__type_support.c\n'}
+[9.024741] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mission_result__type_support.c\n'}
+[9.024914] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/obstacle_distance__type_support.c\n'}
+[9.025028] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_controls_status__type_support.c\n'}
+[9.025179] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.c\n'}
+[9.025349] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/yaw_estimator_status__type_support.c\n'}
+[9.025567] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/distance_sensor__type_support.c\n'}
+[9.025729] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/message_format_response__type_support.c\n'}
+[9.025891] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/srv\n'}
+[9.026085] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/srv/detail\n'}
+[9.026475] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/srv/detail/vehicle_command__type_support.c\n'}
+[9.027385] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_introspection_c.so\n'}
+[9.028201] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_c.so\n'}
+[9.028675] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs\n'}
+[9.028934] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg\n'}
+[9.029124] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail\n'}
+[9.029285] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gpio_in__type_support.cpp\n'}
+[9.029464] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rtl_time_estimate__type_support.cpp\n'}
+[9.029630] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/px4io_status__type_support.cpp\n'}
+[9.029802] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_sensor_bias__type_support.cpp\n'}
+[9.029957] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rover_ackermann_setpoint__type_support.cpp\n'}
+[9.030103] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/input_rc__type_support.cpp\n'}
+[9.030595] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_aid_source1d__type_support.cpp\n'}
+[9.030972] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/open_drone_id_system__type_support.cpp\n'}
+[9.031288] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_gps__type_support.cpp\n'}
+[9.031808] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mavlink_tunnel__type_support.cpp\n'}
+[9.032183] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/follow_target_status__type_support.cpp\n'}
+[9.032517] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/config_overrides__type_support.cpp\n'}
+[9.032865] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/parameter_set_value_response__type_support.cpp\n'}
+[9.033282] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/ulog_stream__type_support.cpp\n'}
+[9.033726] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/ekf2_timestamps__type_support.cpp\n'}
+[9.034047] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/message_format_response__type_support.cpp\n'}
+[9.034406] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mission_result__type_support.cpp\n'}
+[9.034896] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rover_mecanum_guidance_status__type_support.cpp\n'}
+[9.035311] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_controls_status__type_support.cpp\n'}
+[9.035703] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/home_position__type_support.cpp\n'}
+[9.036041] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/failsafe_flags__type_support.cpp\n'}
+[9.036285] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_angular_velocity__type_support.cpp\n'}
+[9.036455] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gps_dump__type_support.cpp\n'}
+[9.036624] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/parameter_set_value_request__type_support.cpp\n'}
+[9.036770] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/camera_capture__type_support.cpp\n'}
+[9.036919] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_torque_setpoint__type_support.cpp\n'}
+[9.037065] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/debug_key_value__type_support.cpp\n'}
+[9.037211] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_rates_setpoint__type_support.cpp\n'}
+[9.037394] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/yaw_estimator_status__type_support.cpp\n'}
+[9.037587] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/tune_control__type_support.cpp\n'}
+[9.037690] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/magnetometer_bias_estimate__type_support.cpp\n'}
+[9.038065] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/open_drone_id_operator_id__type_support.cpp\n'}
+[9.038636] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/iridiumsbd_status__type_support.cpp\n'}
+[9.039030] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/orb_test__type_support.cpp\n'}
+[9.039465] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_status_flags__type_support.cpp\n'}
+[9.039746] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_thrust_setpoint__type_support.cpp\n'}
+[9.039954] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/cpuload__type_support.cpp\n'}
+[9.040179] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mag_worker_data__type_support.cpp\n'}
+[9.040397] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_roi__type_support.cpp\n'}
+[9.040550] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gimbal_controls__type_support.cpp\n'}
+[9.040751] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_angular_acceleration_setpoint__type_support.cpp\n'}
+[9.040994] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_gps_status__type_support.cpp\n'}
+[9.041257] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_accel__type_support.cpp\n'}
+[9.041700] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/radio_status__type_support.cpp\n'}
+[9.041936] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/navigator_status__type_support.cpp\n'}
+[9.042142] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/parameter_set_used_request__type_support.cpp\n'}
+[9.042428] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/power_button_state__type_support.cpp\n'}
+[9.043147] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_odometry__type_support.cpp\n'}
+[9.043757] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_servos__type_support.cpp\n'}
+[9.044214] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/system_power__type_support.cpp\n'}
+[9.044434] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gps_inject_data__type_support.cpp\n'}
+[9.044634] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position__type_support.cpp\n'}
+[9.044800] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mode_completed__type_support.cpp\n'}
+[9.044975] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_request__type_support.cpp\n'}
+[9.045088] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_gnss_relative__type_support.cpp\n'}
+[9.045196] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/wind__type_support.cpp\n'}
+[9.045311] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mount_orientation__type_support.cpp\n'}
+[9.045496] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/button_event__type_support.cpp\n'}
+[9.045706] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/transponder_report__type_support.cpp\n'}
+[9.045864] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/follow_target__type_support.cpp\n'}
+[9.045990] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/satellite_info__type_support.cpp\n'}
+[9.046097] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/obstacle_distance__type_support.cpp\n'}
+[9.046247] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rover_differential_status__type_support.cpp\n'}
+[9.046403] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/figure_eight_status__type_support.cpp\n'}
+[9.046643] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_outputs__type_support.cpp\n'}
+[9.046932] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/parameter_reset_request__type_support.cpp\n'}
+[9.047419] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/pwm_input__type_support.cpp\n'}
+[9.047964] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/orbit_status__type_support.cpp\n'}
+[9.048524] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_preflight_mag__type_support.cpp\n'}
+[9.048782] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rover_ackermann_guidance_status__type_support.cpp\n'}
+[9.048955] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_aid_source3d__type_support.cpp\n'}
+[9.049059] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_request__type_support.cpp\n'}
+[9.049312] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/timesync_status__type_support.cpp\n'}
+[9.050054] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/internal_combustion_engine_status__type_support.cpp\n'}
+[9.050291] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/parameter_update__type_support.cpp\n'}
+[9.050514] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_setpoint_triplet__type_support.cpp\n'}
+[9.050715] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/telemetry_status__type_support.cpp\n'}
+[9.050908] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_magnetometer__type_support.cpp\n'}
+[9.051154] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/landing_target_pose__type_support.cpp\n'}
+[9.051294] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_selection__type_support.cpp\n'}
+[9.051489] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gimbal_manager_set_manual_control__type_support.cpp\n'}
+[9.051634] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/landing_gear_wheel__type_support.cpp\n'}
+[9.051744] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gimbal_manager_set_attitude__type_support.cpp\n'}
+[9.051833] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_optical_flow_vel__type_support.cpp\n'}
+[9.051919] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/dataman_request__type_support.cpp\n'}
+[9.052105] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gpio_config__type_support.cpp\n'}
+[9.052301] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mavlink_log__type_support.cpp\n'}
+[9.052643] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/hover_thrust_estimate__type_support.cpp\n'}
+[9.052848] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/irlock_report__type_support.cpp\n'}
+[9.053050] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_global_position__type_support.cpp\n'}
+[9.053549] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/geofence_status__type_support.cpp\n'}
+[9.054488] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_airflow__type_support.cpp\n'}
+[9.054899] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/orb_test_large__type_support.cpp\n'}
+[9.055163] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/arming_check_reply__type_support.cpp\n'}
+[9.055410] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_aid_source2d__type_support.cpp\n'}
+[9.055617] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_optical_flow__type_support.cpp\n'}
+[9.055781] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/action_request__type_support.cpp\n'}
+[9.055927] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/buffer128__type_support.cpp\n'}
+[9.056104] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/uavcan_parameter_value__type_support.cpp\n'}
+[9.056324] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_trajectory_waypoint__type_support.cpp\n'}
+[9.056516] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/takeoff_status__type_support.cpp\n'}
+[9.056678] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/heater_status__type_support.cpp\n'}
+[9.056836] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/landing_target_innovations__type_support.cpp\n'}
+[9.057002] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_status__type_support.cpp\n'}
+[9.057201] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_controller_status__type_support.cpp\n'}
+[9.057405] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/onboard_computer_status__type_support.cpp\n'}
+[9.057628] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_control_mode__type_support.cpp\n'}
+[9.057849] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rover_mecanum_setpoint__type_support.cpp\n'}
+[9.058026] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/landing_gear__type_support.cpp\n'}
+[9.058182] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/event__type_support.cpp\n'}
+[9.058334] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_local_position_setpoint__type_support.cpp\n'}
+[9.058647] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_event_flags__type_support.cpp\n'}
+[9.059106] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_mag__type_support.cpp\n'}
+[9.060884] (-) TimerEvent: {}
+[9.061211] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/power_monitor__type_support.cpp\n'}
+[9.061451] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_constraints__type_support.cpp\n'}
+[9.061635] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/adc_report__type_support.cpp\n'}
+[9.061793] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/ping__type_support.cpp\n'}
+[9.061969] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/battery_status__type_support.cpp\n'}
+[9.062117] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/follow_target_estimator__type_support.cpp\n'}
+[9.062263] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_acceleration__type_support.cpp\n'}
+[9.062432] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gimbal_device_attitude_status__type_support.cpp\n'}
+[9.062596] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gpio_request__type_support.cpp\n'}
+[9.062745] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_controller_landing_status__type_support.cpp\n'}
+[9.062895] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_motors__type_support.cpp\n'}
+[9.063001] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/debug_vect__type_support.cpp\n'}
+[9.063105] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_selector_status__type_support.cpp\n'}
+[9.063241] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/goto_setpoint__type_support.cpp\n'}
+[9.063338] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gimbal_device_information__type_support.cpp\n'}
+[9.063506] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_innovations__type_support.cpp\n'}
+[9.063667] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_gyro_fft__type_support.cpp\n'}
+[9.063814] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_optical_flow__type_support.cpp\n'}
+[9.063947] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/esc_report__type_support.cpp\n'}
+[9.064120] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensors_status_imu__type_support.cpp\n'}
+[9.064284] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_bezier__type_support.cpp\n'}
+[9.064453] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/debug_array__type_support.cpp\n'}
+[9.064643] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/velocity_limits__type_support.cpp\n'}
+[9.064921] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_gyro_fifo__type_support.cpp\n'}
+[9.065187] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/logger_status__type_support.cpp\n'}
+[9.065397] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_states__type_support.cpp\n'}
+[9.065693] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_uwb__type_support.cpp\n'}
+[9.065868] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/tecs_status__type_support.cpp\n'}
+[9.066070] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/open_drone_id_arm_status__type_support.cpp\n'}
+[9.066400] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/distance_sensor__type_support.cpp\n'}
+[9.066748] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_test__type_support.cpp\n'}
+[9.067200] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_land_detected__type_support.cpp\n'}
+[9.067344] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_combined__type_support.cpp\n'}
+[9.067501] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/airspeed__type_support.cpp\n'}
+[9.067658] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/unregister_ext_component__type_support.cpp\n'}
+[9.067770] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/task_stack_info__type_support.cpp\n'}
+[9.067862] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/launch_detection_status__type_support.cpp\n'}
+[9.067950] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/generator_status__type_support.cpp\n'}
+[9.068051] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/esc_status__type_support.cpp\n'}
+[9.068155] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/manual_control_switches__type_support.cpp\n'}
+[9.068285] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/collision_constraints__type_support.cpp\n'}
+[9.068462] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/camera_status__type_support.cpp\n'}
+[9.068586] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rtl_status__type_support.cpp\n'}
+[9.068699] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rover_ackermann_status__type_support.cpp\n'}
+[9.068809] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/health_report__type_support.cpp\n'}
+[9.068921] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_air_data__type_support.cpp\n'}
+[9.069029] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rc_parameter_map__type_support.cpp\n'}
+[9.069195] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rpm__type_support.cpp\n'}
+[9.069478] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_imu__type_support.cpp\n'}
+[9.070012] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/orb_test_medium__type_support.cpp\n'}
+[9.070423] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/flight_phase_estimation__type_support.cpp\n'}
+[9.070721] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/geofence_result__type_support.cpp\n'}
+[9.071044] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/airspeed_validated__type_support.cpp\n'}
+[9.071281] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__type_support.cpp\n'}
+[9.071581] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude_setpoint__type_support.cpp\n'}
+[9.071852] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_waypoint__type_support.cpp\n'}
+[9.072031] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/register_ext_component_reply__type_support.cpp\n'}
+[9.072243] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/cellular_status__type_support.cpp\n'}
+[9.072515] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rate_ctrl_status__type_support.cpp\n'}
+[9.072847] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_armed__type_support.cpp\n'}
+[9.073640] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rover_differential_guidance_status__type_support.cpp\n'}
+[9.074066] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/can_interface_status__type_support.cpp\n'}
+[9.074391] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/pps_capture__type_support.cpp\n'}
+[9.074558] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_correction__type_support.cpp\n'}
+[9.074701] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.cpp\n'}
+[9.074810] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude__type_support.cpp\n'}
+[9.074944] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/log_message__type_support.cpp\n'}
+[9.075155] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_hygrometer__type_support.cpp\n'}
+[9.075547] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gripper__type_support.cpp\n'}
+[9.075808] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/position_setpoint__type_support.cpp\n'}
+[9.075984] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/led_control__type_support.cpp\n'}
+[9.076139] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_bias__type_support.cpp\n'}
+[9.076348] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_gyro__type_support.cpp\n'}
+[9.076496] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_trajectory_bezier__type_support.cpp\n'}
+[9.076603] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gimbal_manager_status__type_support.cpp\n'}
+[9.076745] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/camera_trigger__type_support.cpp\n'}
+[9.076897] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/airspeed_wind__type_support.cpp\n'}
+[9.077049] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/autotune_attitude_control_status__type_support.cpp\n'}
+[9.077197] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/ulog_stream_ack__type_support.cpp\n'}
+[9.077359] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rc_channels__type_support.cpp\n'}
+[9.077589] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/qshell_req__type_support.cpp\n'}
+[9.077712] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gimbal_manager_information__type_support.cpp\n'}
+[9.077829] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/trajectory_setpoint__type_support.cpp\n'}
+[9.077920] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/navigator_mission_item__type_support.cpp\n'}
+[9.078010] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/manual_control_setpoint__type_support.cpp\n'}
+[9.078102] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vtol_vehicle_status__type_support.cpp\n'}
+[9.078222] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_accel_fifo__type_support.cpp\n'}
+[9.078311] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rover_mecanum_status__type_support.cpp\n'}
+[9.078467] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_imu_status__type_support.cpp\n'}
+[9.078676] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/actuator_servos_trim__type_support.cpp\n'}
+[9.078944] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/dataman_response__type_support.cpp\n'}
+[9.079312] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gimbal_device_set_attitude__type_support.cpp\n'}
+[9.079785] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/differential_pressure__type_support.cpp\n'}
+[9.080393] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/estimator_bias3d__type_support.cpp\n'}
+[9.080772] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/open_drone_id_self_id__type_support.cpp\n'}
+[9.080979] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/npfg_status__type_support.cpp\n'}
+[9.081108] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/mission__type_support.cpp\n'}
+[9.081258] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/fuel_tank_status__type_support.cpp\n'}
+[9.081424] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensor_baro__type_support.cpp\n'}
+[9.081564] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/qshell_retval__type_support.cpp\n'}
+[9.081702] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/failure_detector_status__type_support.cpp\n'}
+[9.081837] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/uavcan_parameter_request__type_support.cpp\n'}
+[9.081980] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command_ack__type_support.cpp\n'}
+[9.082129] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/tiltrotor_extra_controls__type_support.cpp\n'}
+[9.082290] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/wheel_encoders__type_support.cpp\n'}
+[9.082470] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/debug_value__type_support.cpp\n'}
+[9.082868] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/rover_differential_setpoint__type_support.cpp\n'}
+[9.083231] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/sensors_status__type_support.cpp\n'}
+[9.083531] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/gpio_out__type_support.cpp\n'}
+[9.083792] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__type_support.cpp\n'}
+[9.083948] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/message_format_request__type_support.cpp\n'}
+[9.084068] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/control_allocator_status__type_support.cpp\n'}
+[9.084249] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/normalized_unsigned_setpoint__type_support.cpp\n'}
+[9.084423] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__type_support.cpp\n'}
+[9.084644] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/srv\n'}
+[9.084826] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/srv/detail\n'}
+[9.084991] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/include/px4_msgs/px4_msgs/srv/detail/vehicle_command__type_support.cpp\n'}
+[9.085116] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[9.085310] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/lib/libpx4_msgs__rosidl_typesupport_cpp.so\n'}
+[9.085580] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages/px4_msgs-2.0.1-py3.10.egg-info\n'}
+[9.085979] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages/px4_msgs\n'}
+[9.086336] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages/px4_msgs/msg\n'}
+[9.087030] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages/px4_msgs/srv\n'}
+[9.160998] (-) TimerEvent: {}
+[9.254564] (px4_msgs) StdoutLine: {'line': b"Listing '/home/shibin/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages/px4_msgs'...\n"}
+[9.254823] (px4_msgs) StdoutLine: {'line': b"Listing '/home/shibin/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages/px4_msgs/msg'...\n"}
+[9.254995] (px4_msgs) StdoutLine: {'line': b"Listing '/home/shibin/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages/px4_msgs/srv'...\n"}
+[9.261342] (-) TimerEvent: {}
+[9.272076] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/lib/libpx4_msgs__rosidl_generator_py.so\n'}
+[9.293114] (px4_msgs) StdoutLine: {'line': b'-- Installing: /home/shibin/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.dsv\n'}
+[9.293703] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/share/px4_msgs/cmake/export_px4_msgs__rosidl_generator_cExport.cmake\n'}
+[9.293981] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/share/px4_msgs/cmake/export_px4_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[9.294190] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/share/px4_msgs/cmake/export_px4_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[9.294391] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/share/px4_msgs/cmake/export_px4_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[9.294669] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/share/px4_msgs/cmake/export_px4_msgs__rosidl_generator_cppExport.cmake\n'}
+[9.294824] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/share/px4_msgs/cmake/export_px4_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[9.295005] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/share/px4_msgs/cmake/export_px4_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[9.295182] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/share/px4_msgs/cmake/px4_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[9.295317] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/share/px4_msgs/cmake/px4_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[9.295514] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/share/px4_msgs/cmake/px4_msgs__rosidl_typesupport_cExport.cmake\n'}
+[9.295661] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/share/px4_msgs/cmake/px4_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[9.295814] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/share/px4_msgs/cmake/px4_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[9.297230] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/share/px4_msgs/cmake/px4_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[9.297534] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/share/px4_msgs/cmake/px4_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[9.297868] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/share/px4_msgs/cmake/px4_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[9.298277] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/share/px4_msgs/cmake/export_px4_msgs__rosidl_generator_pyExport.cmake\n'}
+[9.298594] (px4_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_msgs/share/px4_msgs/cmake/export_px4_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[9.302431] (px4_msgs) CommandEnded: {'returncode': 0}
+[9.362259] (-) TimerEvent: {}
+[9.463217] (-) TimerEvent: {}
+[9.487724] (px4_msgs) JobEnded: {'identifier': 'px4_msgs', 'rc': 0}
+[9.491925] (px4_ros_com) JobStarted: {'identifier': 'px4_ros_com'}
+[9.526349] (px4_ros_com) JobProgress: {'identifier': 'px4_ros_com', 'progress': 'cmake'}
+[9.528146] (px4_ros_com) JobProgress: {'identifier': 'px4_ros_com', 'progress': 'build'}
+[9.529657] (px4_ros_com) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/shibin/ws_sensor_combined/build/px4_ros_com', '--', '-j8', '-l8'], 'cwd': '/home/shibin/ws_sensor_combined/build/px4_ros_com', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GZ_SIM_RESOURCE_PATH', '/home/shibin/PX4-Autopilot/Tools/simulation/gz/models:/home/shibin/PX4-Autopilot/Tools/simulation/gz/worlds:'), ('LANGUAGE', 'en_IN:en'), ('USER', 'shibin'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/shibin/ws_sensor_combined/install/px4_msgs/lib:/home/shibin/ws_sensor_combined/install/px4_ros_com/lib:/home/shibin/project_ws/install/tutorial_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/ortools_vendor/lib:/opt/ros/humble/lib'), ('HOME', '/home/shibin'), ('OLDPWD', '/home/shibin'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '5029'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/shibin/project_ws/install:/home/shibin/ws_sensor_combined/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'shibin'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'shibin'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/opt/ortools_vendor/bin:/opt/ros/humble/bin:/home/shibin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/shibin-Mi-NoteBook:@/tmp/.ICE-unix/1116,unix/shibin-Mi-NoteBook:/tmp/.ICE-unix/1116'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5bb58508_9fa5_4bea_a021_eed717ab8e57'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.427G12'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.127'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/shibin/ws_sensor_combined/install/px4_ros_com:/home/shibin/ws_sensor_combined/install/px4_msgs:/home/shibin/ws_sensor_combined/install/gazebo_ros_bridge:/home/shibin/project_ws/install/tutorial_interfaces:/home/shibin/project_ws/install/serp_rl:/home/shibin/project_ws/install/project_pkg:/home/shibin/project_ws/install/drone_simulation:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GZ_VERSION', 'harmonic'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/shibin/ws_sensor_combined/build/px4_ros_com'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/shibin/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/shibin/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/home/shibin/ws_sensor_combined/install/gazebo_ros_bridge/lib/python3.10/site-packages:/home/shibin/project_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:/home/shibin/project_ws/install/serp_rl/lib/python3.10/site-packages:/home/shibin/project_ws/install/project_pkg/lib/python3.10/site-packages:/home/shibin/project_ws/install/drone_simulation/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/shibin/ws_sensor_combined/install/px4_msgs:/home/shibin/ws_sensor_combined/install/px4_ros_com:/home/shibin/project_ws/install/tutorial_interfaces:/home/shibin/ws_sensor_combined/install/gazebo_ros_bridge:/home/shibin/project_ws/install/serp_rl:/home/shibin/project_ws/install/project_pkg:/home/shibin/project_ws/install/drone_simulation:/opt/ros/humble')]), 'shell': False}
+[9.563316] (-) TimerEvent: {}
+[9.663967] (-) TimerEvent: {}
+[9.730075] (px4_ros_com) StdoutLine: {'line': b'[ 16%] Built target vehicle_gps_position_listener\n'}
+[9.736801] (px4_ros_com) StdoutLine: {'line': b'[ 33%] Built target frame_transforms\n'}
+[9.741746] (px4_ros_com) StdoutLine: {'line': b'[ 50%] Built target debug_vect_advertiser\n'}
+[9.750057] (px4_ros_com) StdoutLine: {'line': b'[ 66%] Built target sensor_combined_listener\n'}
+[9.757284] (px4_ros_com) StdoutLine: {'line': b'[ 83%] Built target offboard_control_srv\n'}
+[9.762207] (px4_ros_com) StdoutLine: {'line': b'[100%] Built target offboard_control\n'}
+[9.764167] (-) TimerEvent: {}
+[9.778266] (px4_ros_com) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_copy_px4_ros_com\n'}
+[9.864426] (-) TimerEvent: {}
+[9.964906] (-) TimerEvent: {}
+[10.065412] (-) TimerEvent: {}
+[10.165790] (-) TimerEvent: {}
+[10.266231] (-) TimerEvent: {}
+[10.367297] (-) TimerEvent: {}
+[10.469159] (-) TimerEvent: {}
+[10.570559] (-) TimerEvent: {}
+[10.671844] (-) TimerEvent: {}
+[10.773284] (-) TimerEvent: {}
+[10.873998] (-) TimerEvent: {}
+[10.974634] (-) TimerEvent: {}
+[11.066253] (px4_ros_com) StdoutLine: {'line': b'running egg_info\n'}
+[11.069230] (px4_ros_com) StdoutLine: {'line': b'writing px4_ros_com.egg-info/PKG-INFO\n'}
+[11.071131] (px4_ros_com) StdoutLine: {'line': b'writing dependency_links to px4_ros_com.egg-info/dependency_links.txt\n'}
+[11.071935] (px4_ros_com) StdoutLine: {'line': b'writing top-level names to px4_ros_com.egg-info/top_level.txt\n'}
+[11.075240] (-) TimerEvent: {}
+[11.081656] (px4_ros_com) StdoutLine: {'line': b"reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'\n"}
+[11.083401] (px4_ros_com) StdoutLine: {'line': b"writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'\n"}
+[11.176410] (-) TimerEvent: {}
+[11.212418] (px4_ros_com) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_px4_ros_com_egg\n'}
+[11.252390] (px4_ros_com) CommandEnded: {'returncode': 0}
+[11.254862] (px4_ros_com) JobProgress: {'identifier': 'px4_ros_com', 'progress': 'install'}
+[11.257049] (px4_ros_com) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/shibin/ws_sensor_combined/build/px4_ros_com'], 'cwd': '/home/shibin/ws_sensor_combined/build/px4_ros_com', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GZ_SIM_RESOURCE_PATH', '/home/shibin/PX4-Autopilot/Tools/simulation/gz/models:/home/shibin/PX4-Autopilot/Tools/simulation/gz/worlds:'), ('LANGUAGE', 'en_IN:en'), ('USER', 'shibin'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/shibin/ws_sensor_combined/install/px4_msgs/lib:/home/shibin/ws_sensor_combined/install/px4_ros_com/lib:/home/shibin/project_ws/install/tutorial_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/ortools_vendor/lib:/opt/ros/humble/lib'), ('HOME', '/home/shibin'), ('OLDPWD', '/home/shibin'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '5029'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/shibin/project_ws/install:/home/shibin/ws_sensor_combined/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'shibin'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'shibin'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/opt/ortools_vendor/bin:/opt/ros/humble/bin:/home/shibin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/shibin-Mi-NoteBook:@/tmp/.ICE-unix/1116,unix/shibin-Mi-NoteBook:/tmp/.ICE-unix/1116'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5bb58508_9fa5_4bea_a021_eed717ab8e57'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.427G12'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.127'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/shibin/ws_sensor_combined/install/px4_ros_com:/home/shibin/ws_sensor_combined/install/px4_msgs:/home/shibin/ws_sensor_combined/install/gazebo_ros_bridge:/home/shibin/project_ws/install/tutorial_interfaces:/home/shibin/project_ws/install/serp_rl:/home/shibin/project_ws/install/project_pkg:/home/shibin/project_ws/install/drone_simulation:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GZ_VERSION', 'harmonic'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/shibin/ws_sensor_combined/build/px4_ros_com'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/shibin/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/shibin/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:/home/shibin/ws_sensor_combined/install/gazebo_ros_bridge/lib/python3.10/site-packages:/home/shibin/project_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:/home/shibin/project_ws/install/serp_rl/lib/python3.10/site-packages:/home/shibin/project_ws/install/project_pkg/lib/python3.10/site-packages:/home/shibin/project_ws/install/drone_simulation/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/shibin/ws_sensor_combined/install/px4_msgs:/home/shibin/ws_sensor_combined/install/px4_ros_com:/home/shibin/project_ws/install/tutorial_interfaces:/home/shibin/ws_sensor_combined/install/gazebo_ros_bridge:/home/shibin/project_ws/install/serp_rl:/home/shibin/project_ws/install/project_pkg:/home/shibin/project_ws/install/drone_simulation:/opt/ros/humble')]), 'shell': False}
+[11.276551] (-) TimerEvent: {}
+[11.285167] (px4_ros_com) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.285811] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/sensor_combined_listener\n'}
+[11.286716] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/vehicle_gps_position_listener\n'}
+[11.287520] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/debug_vect_advertiser\n'}
+[11.288116] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_control\n'}
+[11.289044] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_control_srv\n'}
+[11.289806] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/library_path.sh\n'}
+[11.290359] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/library_path.dsv\n'}
+[11.290955] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/include/px4_ros_com\n'}
+[11.291489] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/include/px4_ros_com/frame_transforms.h\n'}
+[11.292931] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/lib/libframe_transforms.so\n'}
+[11.293642] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//launch\n'}
+[11.293800] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//launch/offboard_avoidance.launch.py\n'}
+[11.293892] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//launch/offboard_control_launch.yaml\n'}
+[11.294077] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//launch/sensor_combined_listener.launch.py\n'}
+[11.294269] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test\n'}
+[11.294790] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/pipeline_io_test.py\n'}
+[11.295077] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/test_output.py\n'}
+[11.295428] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/test_input.py\n'}
+[11.296653] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//test/__init__.py\n'}
+[11.297069] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//config\n'}
+[11.297310] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com//config/gz_bridge.yaml\n'}
+[11.297536] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/pythonpath.sh\n'}
+[11.297647] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/pythonpath.dsv\n'}
+[11.297738] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info\n'}
+[11.297869] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/shibin/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/top_level.txt\n'}
+[11.298094] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/shibin/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/PKG-INFO\n'}
+[11.298276] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/shibin/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/SOURCES.txt\n'}
+[11.298515] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/shibin/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/dependency_links.txt\n'}
+[11.298722] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com\n'}
+[11.298876] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/module_to_import.py\n'}
+[11.299056] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/__init__.py\n'}
+[11.376891] (-) TimerEvent: {}
+[11.430305] (px4_ros_com) StdoutLine: {'line': b"Listing '/home/shibin/ws_sensor_combined/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com'...\n"}
+[11.454448] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_control.py\n'}
+[11.454921] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/obstacle_avoidance.py\n'}
+[11.455180] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/offboard_newposition.py\n'}
+[11.455466] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/path_planning_node.py\n'}
+[11.455995] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/lib/px4_ros_com/takeoff_node.py\n'}
+[11.456449] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/ament_index/resource_index/package_run_dependencies/px4_ros_com\n'}
+[11.456674] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/ament_index/resource_index/parent_prefix_path/px4_ros_com\n'}
+[11.456839] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.sh\n'}
+[11.457024] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.dsv\n'}
+[11.457441] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/path.sh\n'}
+[11.457784] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/environment/path.dsv\n'}
+[11.458450] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.bash\n'}
+[11.458685] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.sh\n'}
+[11.459596] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.zsh\n'}
+[11.460122] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/local_setup.dsv\n'}
+[11.460335] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.dsv\n'}
+[11.460734] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/ament_index/resource_index/packages/px4_ros_com\n'}
+[11.461321] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport.cmake\n'}
+[11.461718] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport-noconfig.cmake\n'}
+[11.462082] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[11.462378] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[11.462646] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[11.462917] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[11.463181] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig.cmake\n'}
+[11.463670] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig-version.cmake\n'}
+[11.465278] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/shibin/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.xml\n'}
+[11.467323] (px4_ros_com) CommandEnded: {'returncode': 0}
+[11.477251] (-) TimerEvent: {}
+[11.533676] (px4_ros_com) JobEnded: {'identifier': 'px4_ros_com', 'rc': 0}
+[11.535910] (-) EventReactorShutdown: {}

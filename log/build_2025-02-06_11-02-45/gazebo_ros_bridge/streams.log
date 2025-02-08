@@ -1,0 +1,20 @@
+[1.262s] Invoking command in '/home/shibin/ws_sensor_combined/src/gazebo_ros_bridge': PYTHONPATH=/home/shibin/ws_sensor_combined/build/gazebo_ros_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/shibin/ws_sensor_combined/install/gazebo_ros_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gazebo_ros_bridge build --build-base /home/shibin/ws_sensor_combined/build/gazebo_ros_bridge/build install --record /home/shibin/ws_sensor_combined/build/gazebo_ros_bridge/install.log --single-version-externally-managed install_data
+[1.634s] running egg_info
+[1.635s] writing ../../build/gazebo_ros_bridge/gazebo_ros_bridge.egg-info/PKG-INFO
+[1.635s] writing dependency_links to ../../build/gazebo_ros_bridge/gazebo_ros_bridge.egg-info/dependency_links.txt
+[1.636s] writing entry points to ../../build/gazebo_ros_bridge/gazebo_ros_bridge.egg-info/entry_points.txt
+[1.636s] writing requirements to ../../build/gazebo_ros_bridge/gazebo_ros_bridge.egg-info/requires.txt
+[1.636s] writing top-level names to ../../build/gazebo_ros_bridge/gazebo_ros_bridge.egg-info/top_level.txt
+[1.638s] reading manifest file '../../build/gazebo_ros_bridge/gazebo_ros_bridge.egg-info/SOURCES.txt'
+[1.639s] writing manifest file '../../build/gazebo_ros_bridge/gazebo_ros_bridge.egg-info/SOURCES.txt'
+[1.639s] running build
+[1.639s] running build_py
+[1.639s] running install
+[1.640s] running install_lib
+[1.642s] running install_data
+[1.642s] running install_egg_info
+[1.644s] removing '/home/shibin/ws_sensor_combined/install/gazebo_ros_bridge/lib/python3.10/site-packages/gazebo_ros_bridge-0.0.0-py3.10.egg-info' (and everything under it)
+[1.644s] Copying ../../build/gazebo_ros_bridge/gazebo_ros_bridge.egg-info to /home/shibin/ws_sensor_combined/install/gazebo_ros_bridge/lib/python3.10/site-packages/gazebo_ros_bridge-0.0.0-py3.10.egg-info
+[1.645s] running install_scripts
+[1.670s] writing list of installed files to '/home/shibin/ws_sensor_combined/build/gazebo_ros_bridge/install.log'
+[1.770s] Invoked command in '/home/shibin/ws_sensor_combined/src/gazebo_ros_bridge' returned '0': PYTHONPATH=/home/shibin/ws_sensor_combined/build/gazebo_ros_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/shibin/ws_sensor_combined/install/gazebo_ros_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gazebo_ros_bridge build --build-base /home/shibin/ws_sensor_combined/build/gazebo_ros_bridge/build install --record /home/shibin/ws_sensor_combined/build/gazebo_ros_bridge/install.log --single-version-externally-managed install_data

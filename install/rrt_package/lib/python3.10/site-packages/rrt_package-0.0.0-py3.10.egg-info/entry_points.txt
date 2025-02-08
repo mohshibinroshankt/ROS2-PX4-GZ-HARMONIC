@@ -1,0 +1,4 @@
+[console_scripts]
+my_node = rrt_package.my_node:main
+my_node2 = rrt_package.my_node2:main
+
