@@ -28,4 +28,18 @@
   
   ```
 - Setup Micro XRCE-DDS Agent & Client
+  ```
+      git clone https://github.com/eProsima/Micro-XRCE-DDS-Agent.git
+      cd Micro-XRCE-DDS-Agent
+      mkdir build
+      cd build
+      cmake ..
+      make
+      sudo make install
+      sudo ldconfig /usr/local/lib/
+  
+  ```
+
 - Build & Run ROS 2 Workspace
+
+This is a rough structure, refer **https://docs.px4.io/main/en/ros2/user_guide.html** for the actual PX-ROS2 User guide
