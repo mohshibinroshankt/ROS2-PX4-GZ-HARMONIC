@@ -9,6 +9,7 @@
       bash ./PX4-Autopilot/Tools/setup/ubuntu.sh
       cd PX4-Autopilot/
       make px4_sitl
+```
 - Install ROS 2
 - Setup Micro XRCE-DDS Agent & Client
 - Build & Run ROS 2 Workspace
