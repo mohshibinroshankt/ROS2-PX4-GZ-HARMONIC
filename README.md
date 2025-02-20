@@ -43,3 +43,8 @@
 - Build & Run ROS 2 Workspace
 
 This is a rough structure, refer **https://docs.px4.io/main/en/ros2/user_guide.html** for the actual PX-ROS2 User guide
+
+
+- Adding Custom world 
+1. After proper installation and making the PX4-Autopilot, go to "/home/shibin/PX4-Autopilot/Tools/simulation/gz/worlds" 
+
