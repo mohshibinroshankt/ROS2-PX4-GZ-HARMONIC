@@ -26,6 +26,6 @@
       sudo apt install ros-dev-tools
       source /opt/ros/humble/setup.bash && echo "source /opt/ros/humble/setup.bash" >> .bashrc
   
-      ```
+  ```
 - Setup Micro XRCE-DDS Agent & Client
 - Build & Run ROS 2 Workspace
