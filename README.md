@@ -49,7 +49,7 @@ This is a rough structure, refer **https://docs.px4.io/main/en/ros2/user_guide.h
 1. After proper installation and making the PX4-Autopilot, go to "/home/shibin/PX4-Autopilot/Tools/simulation/gz/worlds"
    Add the custom world to this, make sure the world name in the world file is same as the file name.
 2. Then add the world name to /home/shibin/PX4-Autopilot/src/modules/simulation/gz_bridge/CMakeList.txt
-3. Then build px4 again using ""make px4_sit"'
+3. Then build px4 again using ""make px4_sitl""
 
 Build & Run ROS 2 Workspace
 1. In this created a new node for path planning(to a fixed target)
