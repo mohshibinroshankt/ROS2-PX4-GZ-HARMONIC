@@ -1,0 +1,201 @@
+[0.356s] Invoking command in '/home/shibin/ros2_ws/build/translation_node': CMAKE_PREFIX_PATH=/home/shibin/ros2_ws/install/px4_msgs_old:/home/shibin/ros2_ws/install/px4_msgs:/home/shibin/ros2_ws/install/translation_node:/home/shibin/ros2_ws/install/px4_ros_com:/home/shibin/ros2_ws/install/rrt_package:/home/shibin/ros2_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/shibin/ros2_ws/install/px4_msgs/lib:/home/shibin/ros2_ws/install/translation_node/lib:/home/shibin/ros2_ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/shibin/ros2_ws/build/translation_node -- -j8 -l8
+[0.526s] [  1%] Built target translation_node__cpp
+[0.528s] [  9%] Built target translation_node__rosidl_generator_c
+[0.599s] [  9%] Built target ament_cmake_python_copy_translation_node
+[0.599s] [ 12%] Built target gtest_main
+[0.602s] [ 16%] Built target gtest
+[0.609s] [ 24%] Built target translation_node_lib
+[0.666s] [ 32%] Built target translation_node__rosidl_typesupport_fastrtps_cpp
+[0.672s] [ 40%] Built target translation_node__rosidl_typesupport_cpp
+[0.674s] [ 48%] Built target translation_node__rosidl_typesupport_c
+[0.689s] [ 56%] Built target translation_node__rosidl_typesupport_fastrtps_c
+[0.695s] [ 64%] Built target translation_node__rosidl_typesupport_introspection_c
+[0.722s] [ 72%] Built target translation_node__rosidl_typesupport_introspection_cpp
+[0.755s] [ 79%] Built target translation_node_unit_tests
+[0.760s] [ 82%] Built target translation_node_bin
+[0.774s] [ 82%] Built target translation_node
+[0.828s] [ 83%] Built target translation_node__py
+[0.873s] [ 90%] Built target translation_node__rosidl_generator_py
+[0.929s] [ 93%] Built target translation_node__rosidl_typesupport_c__pyext
+[0.936s] [ 96%] Built target translation_node__rosidl_typesupport_introspection_c__pyext
+[0.941s] [100%] Built target translation_node__rosidl_typesupport_fastrtps_c__pyext
+[1.135s] running egg_info
+[1.171s] writing translation_node.egg-info/PKG-INFO
+[1.172s] writing dependency_links to translation_node.egg-info/dependency_links.txt
+[1.173s] writing top-level names to translation_node.egg-info/top_level.txt
+[1.269s] reading manifest file 'translation_node.egg-info/SOURCES.txt'
+[1.280s] writing manifest file 'translation_node.egg-info/SOURCES.txt'
+[1.346s] [100%] Built target ament_cmake_python_build_translation_node_egg
+[1.367s] Invoked command in '/home/shibin/ros2_ws/build/translation_node' returned '0': CMAKE_PREFIX_PATH=/home/shibin/ros2_ws/install/px4_msgs_old:/home/shibin/ros2_ws/install/px4_msgs:/home/shibin/ros2_ws/install/translation_node:/home/shibin/ros2_ws/install/px4_ros_com:/home/shibin/ros2_ws/install/rrt_package:/home/shibin/ros2_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/shibin/ros2_ws/install/px4_msgs/lib:/home/shibin/ros2_ws/install/translation_node/lib:/home/shibin/ros2_ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/shibin/ros2_ws/build/translation_node -- -j8 -l8
+[1.374s] Invoking command in '/home/shibin/ros2_ws/build/translation_node': CMAKE_PREFIX_PATH=/home/shibin/ros2_ws/install/px4_msgs_old:/home/shibin/ros2_ws/install/px4_msgs:/home/shibin/ros2_ws/install/translation_node:/home/shibin/ros2_ws/install/px4_ros_com:/home/shibin/ros2_ws/install/rrt_package:/home/shibin/ros2_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/shibin/ros2_ws/install/px4_msgs/lib:/home/shibin/ros2_ws/install/translation_node/lib:/home/shibin/ros2_ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/shibin/ros2_ws/build/translation_node
+[1.387s] -- Install configuration: ""
+[1.387s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/lib/translation_node/translation_node_bin
+[1.388s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/ament_index/resource_index/rosidl_interfaces/translation_node
+[1.388s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node
+[1.388s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/msg
+[1.389s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/msg/rosidl_generator_c__visibility_control.h
+[1.389s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv
+[1.389s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/test_v0.h
+[1.389s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/test_v2.h
+[1.389s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail
+[1.389s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v2__type_support.h
+[1.389s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v1__functions.h
+[1.390s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v0__type_support.h
+[1.390s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v0__functions.h
+[1.390s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v2__functions.h
+[1.390s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v1__struct.h
+[1.390s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v0__functions.c
+[1.390s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v1__functions.c
+[1.390s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v0__struct.h
+[1.390s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v1__type_support.h
+[1.390s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v2__functions.c
+[1.391s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v2__struct.h
+[1.391s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/test_v1.h
+[1.391s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/environment/library_path.sh
+[1.391s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/environment/library_path.dsv
+[1.391s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/lib/libtranslation_node__rosidl_generator_c.so
+[1.391s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node
+[1.391s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/msg
+[1.391s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.392s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv
+[1.392s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail
+[1.392s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v2__rosidl_typesupport_fastrtps_c.h
+[1.392s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v0__rosidl_typesupport_fastrtps_c.h
+[1.392s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v1__rosidl_typesupport_fastrtps_c.h
+[1.392s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/lib/libtranslation_node__rosidl_typesupport_fastrtps_c.so
+[1.392s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node
+[1.392s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/msg
+[1.392s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.393s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv
+[1.393s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/test_v0.hpp
+[1.393s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/test_v2.hpp
+[1.393s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail
+[1.393s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v1__builder.hpp
+[1.393s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v0__struct.hpp
+[1.393s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v2__traits.hpp
+[1.393s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v0__type_support.hpp
+[1.394s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v1__traits.hpp
+[1.394s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v0__builder.hpp
+[1.394s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v1__struct.hpp
+[1.394s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v2__builder.hpp
+[1.394s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v1__type_support.hpp
+[1.394s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v2__type_support.hpp
+[1.394s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v2__struct.hpp
+[1.394s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v0__traits.hpp
+[1.394s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/test_v1.hpp
+[1.395s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node
+[1.395s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/msg
+[1.395s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.395s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv
+[1.395s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail
+[1.395s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v2__rosidl_typesupport_fastrtps_cpp.hpp
+[1.395s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v1__rosidl_typesupport_fastrtps_cpp.hpp
+[1.395s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v0__rosidl_typesupport_fastrtps_cpp.hpp
+[1.395s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/dds_fastrtps
+[1.396s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/lib/libtranslation_node__rosidl_typesupport_fastrtps_cpp.so
+[1.396s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node
+[1.396s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/msg
+[1.396s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.396s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv
+[1.397s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail
+[1.397s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v2__type_support.c
+[1.397s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v0__rosidl_typesupport_introspection_c.h
+[1.397s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v1__type_support.c
+[1.397s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v1__rosidl_typesupport_introspection_c.h
+[1.397s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v2__rosidl_typesupport_introspection_c.h
+[1.397s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v0__type_support.c
+[1.398s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/lib/libtranslation_node__rosidl_typesupport_introspection_c.so
+[1.398s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/lib/libtranslation_node__rosidl_typesupport_c.so
+[1.398s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node
+[1.398s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv
+[1.398s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail
+[1.398s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v1__type_support.cpp
+[1.399s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v0__type_support.cpp
+[1.399s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v2__type_support.cpp
+[1.399s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v2__rosidl_typesupport_introspection_cpp.hpp
+[1.399s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v0__rosidl_typesupport_introspection_cpp.hpp
+[1.399s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/include/translation_node/translation_node/srv/detail/test_v1__rosidl_typesupport_introspection_cpp.hpp
+[1.399s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/lib/libtranslation_node__rosidl_typesupport_introspection_cpp.so
+[1.400s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/lib/libtranslation_node__rosidl_typesupport_cpp.so
+[1.400s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/environment/pythonpath.sh
+[1.400s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/environment/pythonpath.dsv
+[1.400s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages/translation_node-0.0.0-py3.10.egg-info
+[1.401s] -- Installing: /home/shibin/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages/translation_node-0.0.0-py3.10.egg-info/SOURCES.txt
+[1.401s] -- Installing: /home/shibin/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages/translation_node-0.0.0-py3.10.egg-info/dependency_links.txt
+[1.401s] -- Installing: /home/shibin/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages/translation_node-0.0.0-py3.10.egg-info/top_level.txt
+[1.401s] -- Installing: /home/shibin/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages/translation_node-0.0.0-py3.10.egg-info/PKG-INFO
+[1.401s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages/translation_node
+[1.401s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages/translation_node/_translation_node_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.401s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages/translation_node/translation_node_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.402s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages/translation_node/translation_node_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.402s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages/translation_node/_translation_node_s.ep.rosidl_typesupport_c.c
+[1.402s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages/translation_node/srv
+[1.402s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages/translation_node/srv/_test_v2.py
+[1.402s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages/translation_node/srv/_test_v0.py
+[1.402s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages/translation_node/srv/_test_v1.py
+[1.402s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages/translation_node/srv/_test_v1_s.c
+[1.402s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages/translation_node/srv/_test_v0_s.c
+[1.402s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages/translation_node/srv/_test_v2_s.c
+[1.402s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages/translation_node/srv/__init__.py
+[1.402s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages/translation_node/translation_node_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.402s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages/translation_node/_translation_node_s.ep.rosidl_typesupport_introspection_c.c
+[1.402s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages/translation_node/__init__.py
+[1.403s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages/translation_node/libtranslation_node__rosidl_generator_py.so
+[1.455s] Listing '/home/shibin/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages/translation_node'...
+[1.455s] Listing '/home/shibin/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages/translation_node/srv'...
+[1.460s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages/translation_node/translation_node_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.462s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages/translation_node/translation_node_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.464s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/local/lib/python3.10/dist-packages/translation_node/translation_node_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.472s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/lib/libtranslation_node__rosidl_generator_py.so
+[1.472s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/srv/TestV0.idl
+[1.472s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/srv/TestV1.idl
+[1.472s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/srv/TestV2.idl
+[1.473s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/srv/TestV0.srv
+[1.473s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/srv/TestV0_Request.msg
+[1.473s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/srv/TestV0_Response.msg
+[1.473s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/srv/TestV1.srv
+[1.473s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/srv/TestV1_Request.msg
+[1.473s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/srv/TestV1_Response.msg
+[1.473s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/srv/TestV2.srv
+[1.473s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/srv/TestV2_Request.msg
+[1.473s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/srv/TestV2_Response.msg
+[1.473s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/ament_index/resource_index/package_run_dependencies/translation_node
+[1.473s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/ament_index/resource_index/parent_prefix_path/translation_node
+[1.474s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/environment/ament_prefix_path.sh
+[1.474s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/environment/ament_prefix_path.dsv
+[1.474s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/environment/path.sh
+[1.474s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/environment/path.dsv
+[1.474s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/local_setup.bash
+[1.474s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/local_setup.sh
+[1.475s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/local_setup.zsh
+[1.475s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/local_setup.dsv
+[1.475s] -- Installing: /home/shibin/ros2_ws/install/translation_node/share/translation_node/package.dsv
+[1.475s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/ament_index/resource_index/packages/translation_node
+[1.476s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/cmake/export_translation_node__rosidl_generator_cExport.cmake
+[1.476s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/cmake/export_translation_node__rosidl_generator_cExport-noconfig.cmake
+[1.477s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/cmake/export_translation_node__rosidl_typesupport_fastrtps_cExport.cmake
+[1.478s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/cmake/export_translation_node__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.478s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/cmake/export_translation_node__rosidl_generator_cppExport.cmake
+[1.478s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/cmake/export_translation_node__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.478s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/cmake/export_translation_node__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.478s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/cmake/translation_node__rosidl_typesupport_introspection_cExport.cmake
+[1.478s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/cmake/translation_node__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.479s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/cmake/translation_node__rosidl_typesupport_cExport.cmake
+[1.479s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/cmake/translation_node__rosidl_typesupport_cExport-noconfig.cmake
+[1.479s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/cmake/translation_node__rosidl_typesupport_introspection_cppExport.cmake
+[1.479s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/cmake/translation_node__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.480s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/cmake/translation_node__rosidl_typesupport_cppExport.cmake
+[1.480s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/cmake/translation_node__rosidl_typesupport_cppExport-noconfig.cmake
+[1.481s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/cmake/export_translation_node__rosidl_generator_pyExport.cmake
+[1.481s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/cmake/export_translation_node__rosidl_generator_pyExport-noconfig.cmake
+[1.481s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/cmake/rosidl_cmake-extras.cmake
+[1.481s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.481s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/cmake/ament_cmake_export_libraries-extras.cmake
+[1.481s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/cmake/ament_cmake_export_targets-extras.cmake
+[1.481s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.481s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.482s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.482s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/cmake/translation_nodeConfig.cmake
+[1.482s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/cmake/translation_nodeConfig-version.cmake
+[1.482s] -- Up-to-date: /home/shibin/ros2_ws/install/translation_node/share/translation_node/package.xml
+[1.505s] Invoked command in '/home/shibin/ros2_ws/build/translation_node' returned '0': CMAKE_PREFIX_PATH=/home/shibin/ros2_ws/install/px4_msgs_old:/home/shibin/ros2_ws/install/px4_msgs:/home/shibin/ros2_ws/install/translation_node:/home/shibin/ros2_ws/install/px4_ros_com:/home/shibin/ros2_ws/install/rrt_package:/home/shibin/ros2_ws/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/shibin/ros2_ws/install/px4_msgs/lib:/home/shibin/ros2_ws/install/translation_node/lib:/home/shibin/ros2_ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/shibin/ros2_ws/build/translation_node

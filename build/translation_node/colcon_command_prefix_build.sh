@@ -1,0 +1,3 @@
+# generated from colcon_core/shell/template/command_prefix.sh.em
+. "/home/shibin/ros2_ws/install/px4_msgs/share/px4_msgs/package.sh"
+. "/home/shibin/ros2_ws/install/px4_msgs_old/share/px4_msgs_old/package.sh"

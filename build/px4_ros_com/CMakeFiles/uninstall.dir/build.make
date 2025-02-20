@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shibin/ws_sensor_combined/src/px4_ros_com
+CMAKE_SOURCE_DIR = /home/shibin/ros2_ws/src/px4_ros_com
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shibin/ws_sensor_combined/build/px4_ros_com
+CMAKE_BINARY_DIR = /home/shibin/ros2_ws/build/px4_ros_com
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/shibin/ws_sensor_combined/build/px4_ros_com && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shibin/ws_sensor_combined/src/px4_ros_com /home/shibin/ws_sensor_combined/src/px4_ros_com /home/shibin/ws_sensor_combined/build/px4_ros_com /home/shibin/ws_sensor_combined/build/px4_ros_com /home/shibin/ws_sensor_combined/build/px4_ros_com/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/shibin/ros2_ws/build/px4_ros_com && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shibin/ros2_ws/src/px4_ros_com /home/shibin/ros2_ws/src/px4_ros_com /home/shibin/ros2_ws/build/px4_ros_com /home/shibin/ros2_ws/build/px4_ros_com /home/shibin/ros2_ws/build/px4_ros_com/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

@@ -1,4 +1,6 @@
 [console_scripts]
+lidar_data_node = rrt_package.lidar_data_node:main
 my_node = rrt_package.my_node:main
 my_node2 = rrt_package.my_node2:main
-
+my_node4 = rrt_package.my_node4:main
+mynode3 = rrt_package.mynode3:main

@@ -1,1 +1,3 @@
-/home/shibin/ws_sensor_combined/src/px4_msgs/msg/OpenDroneIdArmStatus.msg
+uint64 timestamp
+uint8 status
+char[50] error

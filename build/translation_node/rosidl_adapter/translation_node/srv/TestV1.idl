@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from translation_node/test/srv/TestV1.srv
+// generated code does not contain a copyright notice
+
+
+module translation_node {
+  module srv {
+    module TestV1_Request_Constants {
+      const uint32 MESSAGE_VERSION = 1;
+    };
+    struct TestV1_Request {
+      uint64 request_a;
+    };
+    struct TestV1_Response {
+      uint8 response_a;
+    };
+  };
+};

@@ -1,0 +1,5 @@
+  File "/home/shibin/ros2_ws/install/rrt_package/lib/python3.10/site-packages/rrt_package/my_node2.py", line 136
+    nearest_obstacle = min(self.obstacles, 
+                          ^
+SyntaxError: '(' was never closed
+

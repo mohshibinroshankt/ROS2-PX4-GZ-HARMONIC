@@ -1,0 +1,8 @@
+{
+  "package_name": "translation_node",
+  "non_idl_tuples": [
+    "/home/shibin/ros2_ws/src/translation_node:test/srv/TestV0.srv",
+    "/home/shibin/ros2_ws/src/translation_node:test/srv/TestV1.srv",
+    "/home/shibin/ros2_ws/src/translation_node:test/srv/TestV2.srv"
+  ]
+}

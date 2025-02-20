@@ -61,7 +61,7 @@ class OffboardControl(Node):
         # LaserScan subscriber
         self.laser_scan_subscriber = self.create_subscription(
             LaserScan,
-            '/scan',
+            '/world/iris_maze/model/x500_lidar_2d_0/link/link/sensor/lidar_2d_v2/scan',
             self.laser_scan_callback,
             1)
 
@@ -79,11 +79,11 @@ class OffboardControl(Node):
         self.obstacle_grid = {}  # Grid-based obstacle representation
         self.grid_resolution = 0.5  # 0.5m grid cells
         self.obstacle_height = 3.0  # Assumed height of obstacles
-        self.min_distance_to_obstacle = 1.2
-        self.safety_margin = 1.8
-        self.emergency_stop_distance = 1.5
+        self.min_distance_to_obstacle = 1
+        self.safety_margin = 1
+        self.emergency_stop_distance = 1
         self.is_emergency = False
-        self.obstacle_expiry_time = 4.2  # Time after which obstacles are considered stale
+        self.obstacle_expiry_time = 1  # Time after which obstacles are considered stale
         
         # Height maintenance parameters
         self.height_check_threshold = 0.5  # Threshold for height deviation
@@ -97,7 +97,7 @@ class OffboardControl(Node):
         self.replan_interval = 0.5
         self.environment_changed = False
         self.minimum_passage_width = 2.5
-        self.path_clearance_threshold = 2.0
+        self.path_clearance_threshold = 1.0
 
         # Path planning parameters
         self.path = []

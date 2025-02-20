@@ -1,0 +1,28 @@
+{
+  "package_name": "translation_node",
+  "output_dir": "/home/shibin/ros2_ws/build/translation_node/rosidl_generator_c/translation_node",
+  "template_dir": "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource",
+  "idl_tuples": [
+    "/home/shibin/ros2_ws/build/translation_node/rosidl_adapter/translation_node:srv/TestV0.idl",
+    "/home/shibin/ros2_ws/build/translation_node/rosidl_adapter/translation_node:srv/TestV1.idl",
+    "/home/shibin/ros2_ws/build/translation_node/rosidl_adapter/translation_node:srv/TestV2.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../local/lib/python3.10/dist-packages/rosidl_generator_c/__init__.py",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/action__type_support.h.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/idl.h.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/idl__functions.c.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/idl__functions.h.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/idl__struct.h.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/idl__type_support.h.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__functions.c.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__functions.h.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
+    "/home/shibin/ros2_ws/build/translation_node/rosidl_adapter/translation_node/srv/TestV0.idl",
+    "/home/shibin/ros2_ws/build/translation_node/rosidl_adapter/translation_node/srv/TestV1.idl",
+    "/home/shibin/ros2_ws/build/translation_node/rosidl_adapter/translation_node/srv/TestV2.idl"
+  ]
+}

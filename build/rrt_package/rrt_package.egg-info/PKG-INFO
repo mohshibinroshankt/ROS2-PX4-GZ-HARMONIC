@@ -1,13 +1,17 @@
-Metadata-Version: 2.1
-Name: rrt-package
+Metadata-Version: 2.2
+Name: rrt_package
 Version: 0.0.0
 Summary: TODO: Package description
-Home-page: UNKNOWN
 Maintainer: shibin
 Maintainer-email: shibin@todo.todo
 License: Apache-2.0
-Platform: UNKNOWN
 License-File: LICENSE
-
-UNKNOWN
-
+Requires-Dist: setuptools
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: summary

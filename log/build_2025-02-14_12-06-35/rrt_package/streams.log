@@ -1,0 +1,36 @@
+[3.060s] Invoking command in '/home/shibin/ros2_ws/src/rrt_package': PYTHONPATH=/home/shibin/ros2_ws/build/rrt_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/shibin/ros2_ws/install/rrt_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rrt_package build --build-base /home/shibin/ros2_ws/build/rrt_package/build install --record /home/shibin/ros2_ws/build/rrt_package/install.log --single-version-externally-managed install_data
+[4.062s] running egg_info
+[4.132s] writing ../../build/rrt_package/rrt_package.egg-info/PKG-INFO
+[4.134s] writing dependency_links to ../../build/rrt_package/rrt_package.egg-info/dependency_links.txt
+[4.135s] writing entry points to ../../build/rrt_package/rrt_package.egg-info/entry_points.txt
+[4.135s] writing requirements to ../../build/rrt_package/rrt_package.egg-info/requires.txt
+[4.137s] writing top-level names to ../../build/rrt_package/rrt_package.egg-info/top_level.txt
+[4.267s] reading manifest file '../../build/rrt_package/rrt_package.egg-info/SOURCES.txt'
+[4.269s] adding license file 'LICENSE'
+[4.274s] writing manifest file '../../build/rrt_package/rrt_package.egg-info/SOURCES.txt'
+[4.276s] running build
+[4.276s] running build_py
+[4.277s] copying rrt_package/my_node2.py -> /home/shibin/ros2_ws/build/rrt_package/build/lib/rrt_package
+[4.279s] copying rrt_package/lidar_data_node.py -> /home/shibin/ros2_ws/build/rrt_package/build/lib/rrt_package
+[4.279s] copying rrt_package/my_node4.py -> /home/shibin/ros2_ws/build/rrt_package/build/lib/rrt_package
+[4.280s] copying rrt_package/my_node.py -> /home/shibin/ros2_ws/build/rrt_package/build/lib/rrt_package
+[4.280s] copying rrt_package/mynode3.py -> /home/shibin/ros2_ws/build/rrt_package/build/lib/rrt_package
+[4.281s] copying rrt_package/__init__.py -> /home/shibin/ros2_ws/build/rrt_package/build/lib/rrt_package
+[4.282s] running install
+[4.303s] running install_lib
+[4.377s] copying /home/shibin/ros2_ws/build/rrt_package/build/lib/rrt_package/mynode3.py -> /home/shibin/ros2_ws/install/rrt_package/lib/python3.10/site-packages/rrt_package
+[4.378s] byte-compiling /home/shibin/ros2_ws/install/rrt_package/lib/python3.10/site-packages/rrt_package/mynode3.py to mynode3.cpython-310.pyc
+[4.386s] running install_data
+[4.388s] copying resource/rrt_package -> /home/shibin/ros2_ws/install/rrt_package/share/ament_index/resource_index/packages
+[4.389s] copying package.xml -> /home/shibin/ros2_ws/install/rrt_package/share/rrt_package
+[4.390s] running install_egg_info
+[4.458s] removing '/home/shibin/ros2_ws/install/rrt_package/lib/python3.10/site-packages/rrt_package-0.0.0-py3.10.egg-info' (and everything under it)
+[4.460s] Copying ../../build/rrt_package/rrt_package.egg-info to /home/shibin/ros2_ws/install/rrt_package/lib/python3.10/site-packages/rrt_package-0.0.0-py3.10.egg-info
+[4.460s] running install_scripts
+[4.973s] Installing lidar_data_node script to /home/shibin/ros2_ws/install/rrt_package/lib/rrt_package
+[4.974s] Installing my_node script to /home/shibin/ros2_ws/install/rrt_package/lib/rrt_package
+[4.974s] Installing my_node2 script to /home/shibin/ros2_ws/install/rrt_package/lib/rrt_package
+[4.975s] Installing my_node4 script to /home/shibin/ros2_ws/install/rrt_package/lib/rrt_package
+[4.975s] Installing mynode3 script to /home/shibin/ros2_ws/install/rrt_package/lib/rrt_package
+[4.977s] writing list of installed files to '/home/shibin/ros2_ws/build/rrt_package/install.log'
+[5.077s] Invoked command in '/home/shibin/ros2_ws/src/rrt_package' returned '0': PYTHONPATH=/home/shibin/ros2_ws/build/rrt_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/shibin/ros2_ws/install/rrt_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rrt_package build --build-base /home/shibin/ros2_ws/build/rrt_package/build install --record /home/shibin/ros2_ws/build/rrt_package/install.log --single-version-externally-managed install_data

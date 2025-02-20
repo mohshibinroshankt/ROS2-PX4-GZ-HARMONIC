@@ -1,0 +1,35 @@
+running egg_info
+writing ../../build/rrt_package/rrt_package.egg-info/PKG-INFO
+writing dependency_links to ../../build/rrt_package/rrt_package.egg-info/dependency_links.txt
+writing entry points to ../../build/rrt_package/rrt_package.egg-info/entry_points.txt
+writing requirements to ../../build/rrt_package/rrt_package.egg-info/requires.txt
+writing top-level names to ../../build/rrt_package/rrt_package.egg-info/top_level.txt
+reading manifest file '../../build/rrt_package/rrt_package.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/rrt_package/rrt_package.egg-info/SOURCES.txt'
+running build
+running build_py
+copying rrt_package/my_node2.py -> /home/shibin/ros2_ws/build/rrt_package/build/lib/rrt_package
+copying rrt_package/lidar_data_node.py -> /home/shibin/ros2_ws/build/rrt_package/build/lib/rrt_package
+copying rrt_package/my_node4.py -> /home/shibin/ros2_ws/build/rrt_package/build/lib/rrt_package
+copying rrt_package/my_node.py -> /home/shibin/ros2_ws/build/rrt_package/build/lib/rrt_package
+copying rrt_package/mynode3.py -> /home/shibin/ros2_ws/build/rrt_package/build/lib/rrt_package
+copying rrt_package/__init__.py -> /home/shibin/ros2_ws/build/rrt_package/build/lib/rrt_package
+running install
+running install_lib
+copying /home/shibin/ros2_ws/build/rrt_package/build/lib/rrt_package/my_node2.py -> /home/shibin/ros2_ws/install/rrt_package/lib/python3.10/site-packages/rrt_package
+byte-compiling /home/shibin/ros2_ws/install/rrt_package/lib/python3.10/site-packages/rrt_package/my_node2.py to my_node2.cpython-310.pyc
+Sorry: IndentationError: expected an indented block after function definition on line 338 (my_node2.py, line 339)
+running install_data
+copying resource/rrt_package -> /home/shibin/ros2_ws/install/rrt_package/share/ament_index/resource_index/packages
+copying package.xml -> /home/shibin/ros2_ws/install/rrt_package/share/rrt_package
+running install_egg_info
+removing '/home/shibin/ros2_ws/install/rrt_package/lib/python3.10/site-packages/rrt_package-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/rrt_package/rrt_package.egg-info to /home/shibin/ros2_ws/install/rrt_package/lib/python3.10/site-packages/rrt_package-0.0.0-py3.10.egg-info
+running install_scripts
+Installing lidar_data_node script to /home/shibin/ros2_ws/install/rrt_package/lib/rrt_package
+Installing my_node script to /home/shibin/ros2_ws/install/rrt_package/lib/rrt_package
+Installing my_node2 script to /home/shibin/ros2_ws/install/rrt_package/lib/rrt_package
+Installing my_node4 script to /home/shibin/ros2_ws/install/rrt_package/lib/rrt_package
+Installing mynode3 script to /home/shibin/ros2_ws/install/rrt_package/lib/rrt_package
+writing list of installed files to '/home/shibin/ros2_ws/build/rrt_package/install.log'

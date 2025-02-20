@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "translation_node__py",
+		"source" : "/home/shibin/ros2_ws/build/translation_node/translation_node__py"
+	}
+}

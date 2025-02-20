@@ -1,0 +1,5 @@
+  File "/home/shibin/ros2_ws/install/rrt_package/lib/python3.10/site-packages/rrt_package/mynode3.py", line 556
+    continue
+    ^^^^^^^^
+SyntaxError: 'continue' not properly in loop
+

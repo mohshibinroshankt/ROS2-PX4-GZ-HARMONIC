@@ -1,0 +1,10 @@
+setup.py
+translation_node/__init__.py
+translation_node.egg-info/PKG-INFO
+translation_node.egg-info/SOURCES.txt
+translation_node.egg-info/dependency_links.txt
+translation_node.egg-info/top_level.txt
+translation_node/srv/__init__.py
+translation_node/srv/_test_v0.py
+translation_node/srv/_test_v1.py
+translation_node/srv/_test_v2.py

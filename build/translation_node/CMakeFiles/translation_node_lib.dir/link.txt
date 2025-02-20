@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtranslation_node_lib.a CMakeFiles/translation_node_lib.dir/src/monitor.cpp.o CMakeFiles/translation_node_lib.dir/src/pub_sub_graph.cpp.o CMakeFiles/translation_node_lib.dir/src/service_graph.cpp.o CMakeFiles/translation_node_lib.dir/src/translations.cpp.o
+/usr/bin/ranlib libtranslation_node_lib.a

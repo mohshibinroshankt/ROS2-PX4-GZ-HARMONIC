@@ -1,6 +1,4 @@
-import os
 from setuptools import find_packages, setup
-from glob import glob
 
 package_name = 'rrt_package'
 
@@ -10,9 +8,8 @@ setup(
     packages=find_packages(exclude=['test']),
     data_files=[
         ('share/ament_index/resource_index/packages',
-            [os.path.join('resource/' + package_name)]),
+            ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        (os.path.join('share', package_name, 'config'), glob('config/*.yaml')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -20,12 +17,16 @@ setup(
     maintainer_email='shibin@todo.todo',
     description='TODO: Package description',
     license='Apache-2.0',
-    tests_require=['pytest'],
+    extras_require={
+    'test': ['pytest'],
+},
     entry_points={
         'console_scripts': [
             'my_node = rrt_package.my_node:main',
             'my_node2 = rrt_package.my_node2:main',
-            
+            'mynode3 = rrt_package.mynode3:main',
+            'lidar_data_node = rrt_package.lidar_data_node:main',
+            'my_node4 = rrt_package.my_node4:main',
         ],
     },
 )
