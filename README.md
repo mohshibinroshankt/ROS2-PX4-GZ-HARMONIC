@@ -7,7 +7,7 @@
       git clone https://github.com/PX4/PX4-Autopilot.git --recursive
       bash ./PX4-Autopilot/Tools/setup/ubuntu.sh
       cd PX4-Autopilot/
-      make px4_sitl```
+      make px4_sitl
 - Install ROS 2
 - Setup Micro XRCE-DDS Agent & Client
 - Build & Run ROS 2 Workspace
