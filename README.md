@@ -121,10 +121,10 @@ OR
 ```bash
    ros2 run px4_ros_com offboard_control.py 
    ```
-** Also, before running this node, make sure that 
-1. The gz sim with drone mode is spawned.
-2. Communication is established with MicroXRCEDDS running in another terminal.
-3. And also qground control in installed and runnning. **
+**Also, before running this node, make sure that**
+1. **The gz sim with drone mode is spawned.**
+2. **Communication is established with MicroXRCEDDS running in another terminal.**
+3. **And also qground control in installed and runnning.**
 
 # Installing QGroundControl
 
@@ -146,7 +146,7 @@ After running these commands, **log out and log back in** to apply the user perm
 
 ## Installing and Running QGroundControl
 
-1. **Download** `QGroundControl.AppImage` from the [official QGroundControl releases page](https://github.com/mavlink/qgroundcontrol/releases).
+1. **Download** `QGroundControl.AppImage` from the [official QGroundControl releases page](https://docs.qgroundcontrol.com/master/en/qgc-user-guide/getting_started/download_and_install.html).
 2. **Make the file executable**:
    ```bash
    chmod +x ./QGroundControl.AppImage
@@ -162,7 +162,7 @@ After running these commands, **log out and log back in** to apply the user perm
 - If you experience display issues, try running QGroundControl with `--disable-gpu` as an argument.
 - Use a stable release version for best compatibility with PX4.
 
-For more details, visit the [QGroundControl Documentation](https://docs.qgroundcontrol.com/).
+For more details, visit the [QGroundControl Documentation](https://docs.qgroundcontrol.com/master/en/qgc-user-guide/getting_started/download_and_install.html#ubuntu).
 
 
 ## Notes
