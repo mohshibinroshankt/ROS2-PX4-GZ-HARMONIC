@@ -114,12 +114,12 @@ Ensure you have installed:
    ```bash
    ros2 launch px4_ros_com sensor_combined_listener.launch.py
    ```
-OR
+        OR
 
 5. Running an example offboard_control node
-```bash
-   ros2 run px4_ros_com offboard_control.py 
-   ```
+    ```bash
+    ros2 run px4_ros_com offboard_control.py 
+    ```
 **Also, before running this node, make sure that**
 1. **The gz sim with drone mode is spawned.**
 2. **Communication is established with MicroXRCEDDS running in another terminal.**
