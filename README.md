@@ -114,7 +114,7 @@ Ensure you have installed:
    ```bash
    ros2 launch px4_ros_com sensor_combined_listener.launch.py
    ```
-        OR
+OR
 
 5. Running an example offboard_control node
     ```bash
