@@ -121,6 +121,49 @@ OR
 ```bash
    ros2 run px4_ros_com offboard_control.py 
    ```
+** Also, before running this node, make sure that 
+1. The gz sim with drone mode is spawned.
+2. Communication is established with MicroXRCEDDS running in another terminal.
+3. And also qground control in installed and runnning. **
+
+# Installing QGroundControl
+
+QGroundControl is the ground control software used to interface with PX4-based drones. Follow the steps below to install and run it on your system.
+
+## Prerequisites
+
+Before installing QGroundControl, run the following commands to configure necessary system permissions and dependencies:
+
+```bash
+sudo usermod -a -G dialout $USER
+sudo apt-get remove modemmanager -y
+sudo apt install gstreamer1.0-plugins-bad gstreamer1.0-libav gstreamer1.0-gl -y
+sudo apt install libfuse2 -y
+sudo apt install libxcb-xinerama0 libxkbcommon-x11-0 libxcb-cursor-dev -y
+```
+
+After running these commands, **log out and log back in** to apply the user permission changes.
+
+## Installing and Running QGroundControl
+
+1. **Download** `QGroundControl.AppImage` from the [official QGroundControl releases page](https://github.com/mavlink/qgroundcontrol/releases).
+2. **Make the file executable**:
+   ```bash
+   chmod +x ./QGroundControl.AppImage
+   ```
+3. **Run QGroundControl**:
+   ```bash
+   ./QGroundControl.AppImage
+   ```
+   Alternatively, you can double-click the AppImage file to launch it.
+
+## Notes
+- Ensure that your system meets the required dependencies for smooth operation.
+- If you experience display issues, try running QGroundControl with `--disable-gpu` as an argument.
+- Use a stable release version for best compatibility with PX4.
+
+For more details, visit the [QGroundControl Documentation](https://docs.qgroundcontrol.com/).
+
 
 ## Notes
 - Ensure the PX4 firmware and `px4_msgs` package have matching message definitions.
