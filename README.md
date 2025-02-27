@@ -115,6 +115,12 @@ Ensure you have installed:
    ```bash
    ros2 launch px4_ros_com sensor_combined_listener.launch.py
    ```
+OR
+
+5. Running an example offboard_control node
+```bash
+   ros2 run px4_ros_com offboard_control.py 
+   ```
 
 ## Notes
 - Ensure the PX4 firmware and `px4_msgs` package have matching message definitions.
