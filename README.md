@@ -3,15 +3,15 @@
 ### To setup ROS 2 for use with PX4:
 
 - Install PX4 (to use the PX4 simulator)
-```
-      cd
-      git clone https://github.com/PX4/PX4-Autopilot.git --recursive
-      bash ./PX4-Autopilot/Tools/setup/ubuntu.sh
-      cd PX4-Autopilot/
-      make px4_sitl
+```bash
+cd
+git clone https://github.com/PX4/PX4-Autopilot.git --recursive
+bash ./PX4-Autopilot/Tools/setup/ubuntu.sh
+cd PX4-Autopilot/
+make px4_sitl
 ```
 - Install ROS 2
-  ```
+  ```bash
       sudo apt update && sudo apt install locales
       sudo locale-gen en_US en_US.UTF-8
       sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
@@ -28,7 +28,7 @@
   
   ```
 - Setup Micro XRCE-DDS Agent & Client
-  ```
+  ```bash
       git clone https://github.com/eProsima/Micro-XRCE-DDS-Agent.git
       cd Micro-XRCE-DDS-Agent
       mkdir build
