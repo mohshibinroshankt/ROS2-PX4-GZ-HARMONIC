@@ -49,10 +49,85 @@ This is a rough structure, refer **https://docs.px4.io/main/en/ros2/user_guide.h
 1. After proper installation and making the PX4-Autopilot, go to "/home/shibin/PX4-Autopilot/Tools/simulation/gz/worlds"
    Add the custom world to this, make sure the world name in the world file is same as the file name.
 2. Then add the world name to /home/shibin/PX4-Autopilot/src/modules/simulation/gz_bridge/CMakeList.txt
-3. Then build px4 again using ""make px4_sitl""
+3. Then build px4 again using ""make px4_sitl_gz_x500""
 
 Build & Run ROS 2 Workspace
-1. In this created a new node for path planning(to a fixed target)
+# PX4 ROS 2 Workspace Setup
+
+This section provides instructions on how to create and build a ROS 2 workspace for PX4 integration using `px4_ros_com`(an example repo) and `px4_msgs` packages.
+
+## Prerequisites
+Ensure you have installed:
+- ROS 2 Humble
+- PX4 Firmware
+- Colcon build tools
+- Git
+
+## Creating the Workspace
+
+1. Open a terminal and create a new workspace directory:
+   ```bash
+   mkdir -p ~/ws_sensor_combined/src/
+   cd ~/ws_sensor_combined/src/
+   ```
+
+2. Clone the required repositories:
+   ```bash
+   git clone https://github.com/PX4/px4_msgs.git
+   git clone https://github.com/PX4/px4_ros_com.git
+   ```
+
+## Building the Workspace
+
+1. Navigate to the workspace root:
+   ```bash
+   cd ~/ws_sensor_combined/
+   ```
+
+2. Source the ROS 2 environment:
+   ```bash
+   source /opt/ros/humble/setup.bash
+   ```
+
+3. Build the workspace using Colcon:
+   ```bash
+   colcon build
+   ```
+
+## Running the Example
+
+1. Open a new terminal and navigate to the workspace:
+   ```bash
+   cd ~/ws_sensor_combined/
+   ```
+
+2. Source the ROS 2 environment:
+   ```bash
+   source /opt/ros/humble/setup.bash
+   ```
+
+3. Source the workspace setup file:
+   ```bash
+   source install/local_setup.bash
+   ```
+
+4. Launch the example node:
+   ```bash
+   ros2 launch px4_ros_com sensor_combined_listener.launch.py
+   ```
+
+## Notes
+- Ensure the PX4 firmware and `px4_msgs` package have matching message definitions.
+- If the message definitions differ, you may need to run a message translation node.
+- Follow ROS 2 best practices by using separate terminals for building and running nodes.
+
+## License
+This section follows the PX4 open-source license. Refer to the original repositories for licensing details.
+
+For more details, visit the [PX4 ROS 2 Integration Guide](https://docs.px4.io/main/en/ros2/user_guide.html#build-ros-2-workspace).
+
+
+
    
 
 ### work in progress
