@@ -173,7 +173,8 @@ For more details, visit the [QGroundControl Documentation](https://docs.qgroundc
 [RTPS_READER_HISTORY Error] Change payload size of '220' bytes is larger than the history payload size of '219' bytes and cannot be resized. -> Function can_change_be_added_nts
 ```
 this means that the message defenition differ in PX4-Autopilot/msgs and px4_msgs/msgs(inside our workspace)
-You can find which message is differ by running the [PX4-ros2-interface-lib](https://docs.px4.io/main/en/ros2/px4_ros2_interface_lib.html)
+You can find which message is differ by running the [PX4-ros2-interface-lib](https://docs.px4.io/main/en/ros2/px4_ros2_interface_lib.html) .
+
 To manually verify that two local versions of PX4 and px4_msgs have matching message sets, you can use the following script:
 
 ```sh
