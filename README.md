@@ -28,7 +28,7 @@ source /opt/ros/humble/setup.bash && echo "source /opt/ros/humble/setup.bash" >>
 
   ```
 - Setup Micro XRCE-DDS Agent & Client
-  ```bash
+```bash
 git clone https://github.com/eProsima/Micro-XRCE-DDS-Agent.git
 cd Micro-XRCE-DDS-Agent
 mkdir build
@@ -37,7 +37,6 @@ cmake ..
 make
 sudo make install
 sudo ldconfig /usr/local/lib/
-  
   ```
 
 - Build & Run ROS 2 Workspace
