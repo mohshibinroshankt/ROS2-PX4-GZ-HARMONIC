@@ -97,8 +97,14 @@ Ensure you have installed:
 **Before running this node, make sure that**
 1. **The gz sim with drone is spawned.**
 2. **Communication is established with MicroXRCEDDS running in another terminal.**
+``` bash
+MicroXRCEAgent udp4 -p 8888
+```
 3. **Run the yaml bridge file in a terminal**
-4. **And also qground control in installed and runnning**
+   ```bash
+   ros2 run ros_gz_bridge parameter_bridge --ros-args -p config_file:=/home/user/workspace/src/package/config/bridge.yaml
+   ```
+5. **And also qground control in installed and runnning**
 
 
 1. Open a new terminal and navigate to the workspace:
