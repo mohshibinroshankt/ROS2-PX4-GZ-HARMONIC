@@ -122,7 +122,8 @@ OR
 **Also, before running this node, make sure that**
 1. **The gz sim with drone mode is spawned.**
 2. **Communication is established with MicroXRCEDDS running in another terminal.**
-3. **And also qground control in installed and runnning.**
+3. **Run the yaml bridge file in a terminal**
+4. **And also qground control in installed and runnning**
 
 # Installing QGroundControl
 
