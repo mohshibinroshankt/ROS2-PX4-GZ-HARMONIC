@@ -43,11 +43,10 @@ sudo ldconfig /usr/local/lib/
 
 This is a rough structure, refer **https://docs.px4.io/main/en/ros2/user_guide.html** for the actual PX-ROS2 User guide
 
-
-- Adding Custom world 
-1. After proper installation and making the PX4-Autopilot, go to "/home/shibin/PX4-Autopilot/Tools/simulation/gz/worlds"
+## Adding Custom world 
+1. After proper installation and making the PX4-Autopilot, go to "/home/user/PX4-Autopilot/Tools/simulation/gz/worlds"
    Add the custom world to this, make sure the world name in the world file is same as the file name.
-2. Then add the world name to /home/shibin/PX4-Autopilot/src/modules/simulation/gz_bridge/CMakeList.txt
+2. Then add the world name to /home/user/PX4-Autopilot/src/modules/simulation/gz_bridge/CMakeList.txt
 3. Then build px4 again using ""make px4_sitl_gz_x500""
 
 Build & Run ROS 2 Workspace
