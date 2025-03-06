@@ -132,6 +132,35 @@ OR
     ```bash
     ros2 run px4_ros_com offboard_control.py 
     ```
+## Creating a new package inside the workspace
+A package is an organizational unit for your ROS 2 code. If you want to be able to install your code or share it with others, then you’ll need it organized in a package. With packages, you can release your ROS 2 work and allow others to build and use it easily.
+
+Package creation in ROS 2 uses ament as its build system and colcon as its build tool. You can create a package using either CMake or Python, which are officially supported, though other build types do exist.
+
+For this project we are using a python package
+
+1. Make sure you are in the src folder before running the package creation command.
+   ```bash
+   cd ~/ros2_ws/src
+   ```
+2. For this tutorial, you will use the optional argument --node-name which creates a simple Hello World type executable in the package.
+
+Enter the following command in your terminal:
+```bash
+ros2 pkg create --build-type ament_python --license Apache-2.0 --node-name node_name my_package
+```
+This will create a package with a node "node_name".
+
+## The simplest possible package may have a file structure that looks like:
+
+```bash
+my_package/
+      package.xml
+      resource/my_package
+      setup.cfg
+      setup.py
+      my_package/
+```
 
 
 # Installing QGroundControl
