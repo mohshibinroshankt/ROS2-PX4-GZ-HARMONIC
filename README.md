@@ -39,6 +39,9 @@ sudo make install
 sudo ldconfig /usr/local/lib/
   ```
 
+After this px4-autopilot, XRCE-DDS Agent, Ros2 (along with tools, eg. simulation tools like gazebo(gazebo harmonic) will be installed). 
+**Note: No need to install gazebo seperately**
+
 - Build & Run ROS 2 Workspace
 
 This is a rough structure, refer **https://docs.px4.io/main/en/ros2/user_guide.html** for the actual PX-ROS2 User guide
