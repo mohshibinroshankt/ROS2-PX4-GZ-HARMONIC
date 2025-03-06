@@ -161,6 +161,8 @@ my_package/
       setup.py
       my_package/
 ```
+**The node you created will be inside <workspace/src/my_package/my_package/node_name>**
+For this project we have created a package named "rrt_package" , you can find the nodes for the project inside.
 
 
 # Installing QGroundControl
