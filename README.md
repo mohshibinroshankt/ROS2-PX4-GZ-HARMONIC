@@ -167,9 +167,11 @@ my_package/
 **The node you created will be inside <workspace/src/my_package/my_package/node_name>**
 For this project we have created a package named "rrt_package" , you can find the nodes for the project inside.
 
-3. For this project, it's better to clone the repo and copy only the package to your ROS 2 workspace (given you have created a workspace in the previous step).
+3. **For this project, it's better to clone the repo and copy only the package to your ROS 2 workspace (given you have created a workspace in the previous step).**
+
 OR
-Just copy the nodes from the rrt_package/rrt_package to your_package/your_package , and add them in setup.py also.
+
+**Just copy the nodes from the rrt_package/rrt_package to your_package/your_package , and add them in setup.py also.**
 
 # Installing QGroundControl
 
