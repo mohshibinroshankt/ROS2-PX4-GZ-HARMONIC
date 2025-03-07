@@ -145,19 +145,18 @@ class OffboardControl(Node):
         self.vehicle_command_publisher = self.create_publisher(VehicleCommand, '/fmu/in/vehicle_command', qos_profile)
         self.vehicle_local_position_subscriber = self.create_subscription(VehicleLocalPosition, '/fmu/out/vehicle_local_position', self.vehicle_local_position_callback, qos_profile)
         self.vehicle_status_subscriber = self.create_subscription(VehicleStatus, '/fmu/out/vehicle_status', self.vehicle_status_callback, qos_profile)
-        self.lidar_subscriber = self.create_subscription(LaserScan, '/world/iris_maze/model/x500_lidar_2d_0/link/link/sensor/lidar_2d_v2/scan', self.lidar_callback, 10)
+        self.lidar_subscriber = self.create_subscription(LaserScan, '/world/iris_maze_nowall/model/x500_lidar_2d_0/link/link/sensor/lidar_2d_v2/scan', self.lidar_callback, 10)
 
         # Initialize variables
         self.offboard_setpoint_counter = 0
         self.vehicle_local_position = VehicleLocalPosition()
         self.vehicle_status = VehicleStatus()
         self.takeoff_height = -5.0
-        self.target_position = [7.0, -3.0, self.takeoff_height]
+        self.target_position = [7.0, 0.0, self.takeoff_height]
         self.current_path = None
         self.current_path_index = 0
         self.obstacle_list = []
         self.has_taken_off = False
-        self.is_facing_target = False  # New flag to track if the drone is facing the target
         self.last_planning_time = 0
         self.planning_interval = 1.0  # Replan every 1 second
         self.waypoint_threshold = 1.0  # Threshold to consider a waypoint reached
@@ -250,25 +249,13 @@ class OffboardControl(Node):
             self.arm()
 
         if not self.has_taken_off and self.vehicle_status.nav_state == VehicleStatus.NAVIGATION_STATE_OFFBOARD:
-            # Takeoff straightly
             self.publish_velocity_position_setpoint(0.0, 0.0, self.takeoff_height)
             if abs(self.vehicle_local_position.z - self.takeoff_height) < 0.5:
                 self.has_taken_off = True
                 self.get_logger().info('Takeoff complete, starting mission')
 
         elif self.has_taken_off and not self.fail_safe_triggered:
-            if not self.is_facing_target:
-                # Calculate yaw to face the target location
-                target_yaw = atan2(self.target_position[1] - self.vehicle_local_position.y, self.target_position[0] - self.vehicle_local_position.x)
-                self.publish_velocity_position_setpoint(self.vehicle_local_position.x, self.vehicle_local_position.y, self.takeoff_height, target_yaw)
-                
-                # Check if the drone is facing the target
-                current_yaw = atan2(self.vehicle_local_position.y, self.vehicle_local_position.x)
-                if abs(current_yaw - target_yaw) < 0.1:  # Threshold for yaw alignment
-                    self.is_facing_target = True
-                    self.get_logger().info('Facing target, starting path planning')
-
-            elif self.current_path and self.current_path_index < len(self.current_path):
+            if self.current_path and self.current_path_index < len(self.current_path):
                 current_target = self.current_path[self.current_path_index]
                 target_x = current_target[0] * self.resolution
                 target_y = current_target[1] * self.resolution
@@ -297,14 +284,11 @@ class OffboardControl(Node):
         if self.offboard_setpoint_counter < 11:
             self.offboard_setpoint_counter += 1
 
-    def publish_velocity_position_setpoint(self, x: float, y: float, z: float, yaw: float = None):
+    def publish_velocity_position_setpoint(self, x: float, y: float, z: float):
         """Publish position setpoint with velocity limit."""
         msg = TrajectorySetpoint()
         msg.position = [x, y, z]
-        if yaw is not None:
-            msg.yaw = yaw
-        else:
-            msg.yaw = atan2(y - self.vehicle_local_position.y, x - self.vehicle_local_position.x)
+        msg.yaw = atan2(y - self.vehicle_local_position.y, x - self.vehicle_local_position.x)
         msg.timestamp = int(self.get_clock().now().nanoseconds / 1000)
         self.trajectory_setpoint_publisher.publish(msg)
 

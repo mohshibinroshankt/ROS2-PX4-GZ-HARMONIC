@@ -8,6 +8,10 @@ from sensor_msgs.msg import LaserScan
 import numpy as np
 from math import atan2, sqrt, cos, sin, pi
 import heapq
+import csv
+import os
+import pandas as pd
+import matplotlib.pyplot as plt
 
 # A* Path Planner
 class AStarPlanner:
@@ -145,19 +149,18 @@ class OffboardControl(Node):
         self.vehicle_command_publisher = self.create_publisher(VehicleCommand, '/fmu/in/vehicle_command', qos_profile)
         self.vehicle_local_position_subscriber = self.create_subscription(VehicleLocalPosition, '/fmu/out/vehicle_local_position', self.vehicle_local_position_callback, qos_profile)
         self.vehicle_status_subscriber = self.create_subscription(VehicleStatus, '/fmu/out/vehicle_status', self.vehicle_status_callback, qos_profile)
-        self.lidar_subscriber = self.create_subscription(LaserScan, '/world/iris_maze/model/x500_lidar_2d_0/link/link/sensor/lidar_2d_v2/scan', self.lidar_callback, 10)
+        self.lidar_subscriber = self.create_subscription(LaserScan, '/world/iris_maze_nowall/model/x500_lidar_2d_0/link/link/sensor/lidar_2d_v2/scan', self.lidar_callback, 10)
 
         # Initialize variables
         self.offboard_setpoint_counter = 0
         self.vehicle_local_position = VehicleLocalPosition()
         self.vehicle_status = VehicleStatus()
         self.takeoff_height = -5.0
-        self.target_position = [7.0, -3.0, self.takeoff_height]
+        self.target_position = [7.0, 0.0, self.takeoff_height]
         self.current_path = None
         self.current_path_index = 0
         self.obstacle_list = []
         self.has_taken_off = False
-        self.is_facing_target = False  # New flag to track if the drone is facing the target
         self.last_planning_time = 0
         self.planning_interval = 1.0  # Replan every 1 second
         self.waypoint_threshold = 1.0  # Threshold to consider a waypoint reached
@@ -180,6 +183,11 @@ class OffboardControl(Node):
 
         # DWA for Obstacle Avoidance
         self.dwa = DWA(max_speed=1.0, max_yaw_rate=1.0, dt=0.1, obstacle_safe_distance=self.obstacle_safe_distance)
+
+        # Data Logging
+        self.log_file = open('drone_data.csv', 'w')
+        self.log_writer = csv.writer(self.log_file)
+        self.log_writer.writerow(['time', 'x', 'y', 'z', 'target_x', 'target_y', 'nearest_obstacle_distance', 'velocity', 'yaw_rate'])
 
         # Timers
         self.timer = self.create_timer(0.1, self.timer_callback)
@@ -250,25 +258,13 @@ class OffboardControl(Node):
             self.arm()
 
         if not self.has_taken_off and self.vehicle_status.nav_state == VehicleStatus.NAVIGATION_STATE_OFFBOARD:
-            # Takeoff straightly
             self.publish_velocity_position_setpoint(0.0, 0.0, self.takeoff_height)
             if abs(self.vehicle_local_position.z - self.takeoff_height) < 0.5:
                 self.has_taken_off = True
                 self.get_logger().info('Takeoff complete, starting mission')
 
         elif self.has_taken_off and not self.fail_safe_triggered:
-            if not self.is_facing_target:
-                # Calculate yaw to face the target location
-                target_yaw = atan2(self.target_position[1] - self.vehicle_local_position.y, self.target_position[0] - self.vehicle_local_position.x)
-                self.publish_velocity_position_setpoint(self.vehicle_local_position.x, self.vehicle_local_position.y, self.takeoff_height, target_yaw)
-                
-                # Check if the drone is facing the target
-                current_yaw = atan2(self.vehicle_local_position.y, self.vehicle_local_position.x)
-                if abs(current_yaw - target_yaw) < 0.1:  # Threshold for yaw alignment
-                    self.is_facing_target = True
-                    self.get_logger().info('Facing target, starting path planning')
-
-            elif self.current_path and self.current_path_index < len(self.current_path):
+            if self.current_path and self.current_path_index < len(self.current_path):
                 current_target = self.current_path[self.current_path_index]
                 target_x = current_target[0] * self.resolution
                 target_y = current_target[1] * self.resolution
@@ -279,6 +275,10 @@ class OffboardControl(Node):
 
                 # Publish setpoint
                 self.publish_velocity_position_setpoint(target_x, target_y, self.takeoff_height)
+
+                # Log data
+                current_time = self.get_clock().now().to_msg().sec
+                self.log_writer.writerow([current_time, self.vehicle_local_position.x, self.vehicle_local_position.y, self.vehicle_local_position.z, self.target_position[0], self.target_position[1], self.nearest_obstacle[0] if self.nearest_obstacle else -1.0, speed, yaw_rate])
 
                 # Check if waypoint is reached
                 dist_to_waypoint = sqrt((self.vehicle_local_position.x - target_x)**2 + (self.vehicle_local_position.y - target_y)**2)
@@ -297,14 +297,11 @@ class OffboardControl(Node):
         if self.offboard_setpoint_counter < 11:
             self.offboard_setpoint_counter += 1
 
-    def publish_velocity_position_setpoint(self, x: float, y: float, z: float, yaw: float = None):
+    def publish_velocity_position_setpoint(self, x: float, y: float, z: float):
         """Publish position setpoint with velocity limit."""
         msg = TrajectorySetpoint()
         msg.position = [x, y, z]
-        if yaw is not None:
-            msg.yaw = yaw
-        else:
-            msg.yaw = atan2(y - self.vehicle_local_position.y, x - self.vehicle_local_position.x)
+        msg.yaw = atan2(y - self.vehicle_local_position.y, x - self.vehicle_local_position.x)
         msg.timestamp = int(self.get_clock().now().nanoseconds / 1000)
         self.trajectory_setpoint_publisher.publish(msg)
 
@@ -360,6 +357,11 @@ class OffboardControl(Node):
         """Callback for vehicle status."""
         self.vehicle_status = msg
 
+    def destroy_node(self):
+        """Close the log file and destroy the node."""
+        self.log_file.close()
+        super().destroy_node()
+
 # Main Function
 def main(args=None) -> None:
     print('Starting offboard control node with local path planning...')
@@ -374,3 +376,44 @@ if __name__ == '__main__':
         main()
     except Exception as e:
         print(f"Error: {e}")
+
+# Data Visualization Script
+def visualize_data():
+    """Visualize the logged data."""
+    data = pd.read_csv('drone_data.csv')
+
+    # Plot Drone Trajectory
+    plt.figure()
+    plt.plot(data['x'], data['y'], label='Drone Path')
+    plt.scatter(data['target_x'], data['target_y'], color='red', label='Target')
+    plt.xlabel('X Position')
+    plt.ylabel('Y Position')
+    plt.title('Drone Trajectory')
+    plt.legend()
+    plt.grid()
+    plt.show()
+
+    # Plot Distance to Nearest Obstacle
+    plt.figure()
+    plt.plot(data['time'], data['nearest_obstacle_distance'], label='Distance to Nearest Obstacle')
+    plt.axhline(y=1.5, color='r', linestyle='--', label='Safe Distance')
+    plt.xlabel('Time (s)')
+    plt.ylabel('Distance (m)')
+    plt.title('Distance to Nearest Obstacle Over Time')
+    plt.legend()
+    plt.grid()
+    plt.show()
+
+    # Plot Velocity and Yaw Rate
+    plt.figure()
+    plt.plot(data['time'], data['velocity'], label='Velocity')
+    plt.plot(data['time'], data['yaw_rate'], label='Yaw Rate')
+    plt.xlabel('Time (s)')
+    plt.ylabel('Value')
+    plt.title('Velocity and Yaw Rate Over Time')
+    plt.legend()
+    plt.grid()
+    plt.show()
+
+# Run Visualization
+visualize_data()

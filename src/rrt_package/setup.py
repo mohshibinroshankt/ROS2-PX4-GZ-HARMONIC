@@ -1,4 +1,5 @@
 from setuptools import find_packages, setup
+from glob import glob
 
 package_name = 'rrt_package'
 
@@ -10,6 +11,8 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        ('share/' + package_name, glob('launch/*.launch.py')),  
+        ('share/' + package_name, glob('config/*.yaml')), 
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -27,6 +30,10 @@ setup(
             'mynode3 = rrt_package.mynode3:main',
             'lidar_data_node = rrt_package.lidar_data_node:main',
             'my_node4 = rrt_package.my_node4:main',
+            'ob_av = rrt_package.ob_av:main',
+            'test = rrt_package.test:main',
+            'lidar_proc = rrt_package.lidar_proc:main',
+            'simple_offboard = rrt_package.simple_offboard:main',
         ],
     },
 )
