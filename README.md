@@ -222,6 +222,11 @@ For more details, visit the [QGroundControl Documentation](https://docs.qgroundc
 this means that the message defenition differ in PX4-Autopilot/msgs and px4_msgs/msgs(inside our workspace)
 You can find which message is differ by running the [PX4-ros2-interface-lib](https://docs.px4.io/main/en/ros2/px4_ros2_interface_lib.html) .
 
+# Clone the repository
+```sh
+git clone --recursive https://github.com/Auterion/px4-ros2-interface-lib
+```
+
 To manually verify that two local versions of PX4 and px4_msgs have matching message sets, you can use the following script:
 
 ```sh
