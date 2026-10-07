@@ -212,7 +212,7 @@ After running these commands, **log out and log back in** to apply the user perm
 For more details, visit the [QGroundControl Documentation](https://docs.qgroundcontrol.com/master/en/qgc-user-guide/getting_started/download_and_install.html#ubuntu).
 
 
-## Notes
+## Compatibility with PX4
 - Ensure the PX4 firmware and `px4_msgs` package have matching message definitions.
 - If the message definitions differ, you may need to run a message translation node.
   ie, If you get error similar to
